@@ -1,4 +1,5 @@
 def task_2():
+    '''Task 2 - calculate sum of all list's elements; count number of even positive elements '''
     odd_numb_count = 0
     sum = 0
     item = None

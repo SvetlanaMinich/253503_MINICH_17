@@ -2,6 +2,7 @@ from decorator import decorator_func
 
 @decorator_func
 def task_3():
+    '''Task 3 - count number of latin letters and number of digits in user's string'''
     letters_numb = 0
     digits_numb = 0
     user_str = input("Enter text to analize: ")

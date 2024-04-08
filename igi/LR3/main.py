@@ -4,6 +4,8 @@ from task3 import task_3
 from task4 import task_4
 from task5 import task_5
 
+'''Lab 3 - Default data types, collections, functions, modules. Minich S.V.'''
+
 while True:
     
     chosen_task = input("Enter int number of the task (from 1 to 5): ")

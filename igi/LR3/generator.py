@@ -1,6 +1,7 @@
 import random
 
 def user_enter():
+    '''func for user's input'''
     u_list = []
     while True:
         numb_of_elements = input("What number of elements do you want to enter? (int numb): ")
@@ -24,7 +25,7 @@ def user_enter():
     return u_list
 
 def rand_list():
-    r_list = []
+    '''func for random list creation'''
     while True:
         numb_of_elements = input("What number of elements do you want to enter? (int numb): ")
         try:
@@ -36,7 +37,6 @@ def rand_list():
         except:
             print("Enter INT number.")
 
-        for i in range(numb_of_elements):
-            rand_elem = random.randint(-100, 100)
-            r_list.append(rand_elem)
-    return r_list
+    for i in range(numb_of_elements):
+        rand_elem = random.randint(-100, 100)
+        yield rand_elem

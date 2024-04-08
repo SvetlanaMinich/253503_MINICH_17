@@ -1,6 +1,8 @@
 import math
 
 def calculate(x, eps):
+    '''func for calculating cos series with user'x eps'''
+    result = 0.0
     for i in range(500):
         fact = 1
         for mult in range(1, 2*i + 1):
@@ -10,9 +12,11 @@ def calculate(x, eps):
         if math.fabs(buf) <= eps:
             print(f"x = {x}, n = {i}, F(x) = {result}, Math F(x) = {round(math.cos(x), 2)}, eps = {eps}")
             return i
+        
     return 0
 
 def task_1():
+    '''Task 1 - calculate cos with series, user's x and eps'''
     x = None
     eps = None
     result = 0.0

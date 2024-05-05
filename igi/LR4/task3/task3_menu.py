@@ -2,6 +2,7 @@ from task3.graphics import Graphic
 from task3.adittionalParam import AdditionalParametres
 
 def Menu3():
+    '''Task 3 menu'''
     print("Additional parametres: ")
     param = AdditionalParametres()
     param.calculate(20, 0.001)

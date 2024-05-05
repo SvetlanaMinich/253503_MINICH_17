@@ -4,6 +4,7 @@ import csv
 
 class SerializeCSV(Serializer):
     def SaveToFile(self):
+        '''Saving to .csv file'''
         with open("task1.csv","w",newline="") as file:
             columns = ["name", "birth_day", "birth_month", "birth_year"]
             writer = csv.DictWriter(file, fieldnames=columns)
@@ -11,6 +12,7 @@ class SerializeCSV(Serializer):
             writer.writerows(self.students)
     
     def LoadFromFile(self):
+        '''Loading from .csv file'''
         students_result = []
         with open("task1.csv","r",newline="") as file:
             reader = csv.DictReader(file, fieldnames=["name", "birth_day", "birth_month", "birth_year"])

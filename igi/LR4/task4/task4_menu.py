@@ -1,9 +1,15 @@
 from task4.triangle import Triangle
 from task4.colour import FigureColour
+from checking.intchecking import IntChecking
 
 def Menu4():
+    '''Task 4 menu'''
     print("Enter Radius value for circle: ")
-    radius = int(input()) #add checking
+    radius = input() #add checking
+    while not IntChecking(radius):
+        print("Enter int value ")
+        radius = input()
+    radius = int(radius)
     print("Enter color letter (R - red, Y - yellow, G - green): ")
     colour = input()
     if colour != "R" and colour != "Y" and colour != "G":

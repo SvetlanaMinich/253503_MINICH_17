@@ -5,6 +5,7 @@ class Taylor:
         self.sequence = []
 
     def calculate(self, x, eps):
+        '''Calculating cos(x) with taylor series'''
         result = 0.0
         for i in range(500):
             fact = 1

@@ -4,8 +4,10 @@ class FigureColour:
 
     @property
     def colour(self):
+        '''Colour property'''
         return self.__colour
     
     @colour.setter
     def set_colour(self, colour):
+        '''Colour setter'''
         self.__colour = colour

@@ -1,10 +1,20 @@
 from task5.NumPyService import NumPyService
+from checking.intchecking import IntChecking
 
 def Menu5():
+    '''Task 5 menu'''
     print("Enter number of rows: ")
-    rows = int(input()) #int checker
+    rows = input()
+    while not IntChecking(rows):
+        print("Enter number of rows: ")
+        rows = input()
+    rows = int(input())
     print("Enter number of columns: ")
-    columns = int(input()) #int checker
+    columns = input()
+    while not IntChecking(columns):
+        print("Enter number of columnss: ")
+        columns = input()
+    columns = int(input())
     npService = NumPyService(rows, columns)
     npService.GenerateMatrix()
     matrix = npService.GetMatrix()

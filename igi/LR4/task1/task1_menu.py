@@ -2,10 +2,15 @@ from task1.student import Student
 from task1.serializeCSV import SerializeCSV
 from task1.serializePickle import SerializePickle
 from task1.dataservice import DataService
+from checking.intchecking import IntChecking
 
 def Menu1():
+    '''Task 1 menu'''
     students = []
     students_num = input("Number of students: ")
+    while not IntChecking(students_num):
+        print("Enter int value: ")
+        students_num = input()
     students_num = int(students_num)
     for i in range(students_num):
         name = input(f"Enter name of {i} student: ")
@@ -40,7 +45,10 @@ def Menu1():
     students_sorted = dataService.SortData(students)
     for stud in students_sorted:
         print(stud["name"])
-    searched_month = input("Enter month to search student: ")
+    searched_month = input("Enter int value of month to search student: ")
+    while not IntChecking(searched_month):
+        print("Enter int value from 1 to 12")
+        searched_month = input()
     stud_by_month = dataService.SearchStudentByMonth(students, searched_month)
     for stud in stud_by_month:
         print(stud["name"])

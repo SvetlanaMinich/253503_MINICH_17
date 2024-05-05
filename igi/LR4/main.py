@@ -1,7 +1,7 @@
 from task import Task
 
 if __name__ == "__main__":
-    print("Лабораторная работа 4\nВариант 17")
+    print("Лабораторная работа 4\nМинич Светлана Владимировна\nгр. 253503\nВариант 17")
     while(True):
         Task()
         print("To stop enter S(s).")

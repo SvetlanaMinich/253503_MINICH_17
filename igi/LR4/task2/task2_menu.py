@@ -1,6 +1,7 @@
 from task2.textAnalizer import TextAnalizer
 
 def Menu2():
+    '''Task 2 menu'''
     ta = TextAnalizer()
     ta.CountSentences()
     ta.CountDifferentTypesOfSentences()

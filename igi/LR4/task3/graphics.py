@@ -9,6 +9,7 @@ class Graphic:
         self.F = []
         
     def MakeGraphic(self):
+        '''Making graphics with cos(x) and taylor's cos, saving in to task3/graph.png'''
         x = np.arange(-1, 1, 0.01)
         taylor = Taylor()
         for i in x:

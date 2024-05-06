@@ -8,13 +8,13 @@ def Menu5():
     while not IntChecking(rows):
         print("Enter number of rows: ")
         rows = input()
-    rows = int(input())
+    rows = int(rows)
     print("Enter number of columns: ")
     columns = input()
     while not IntChecking(columns):
         print("Enter number of columnss: ")
         columns = input()
-    columns = int(input())
+    columns = int(columns)
     npService = NumPyService(rows, columns)
     npService.GenerateMatrix()
     matrix = npService.GetMatrix()

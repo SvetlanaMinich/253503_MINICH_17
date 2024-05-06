@@ -1,5 +1,4 @@
 from task4.triangle import Triangle
-from task4.colour import FigureColour
 from checking.intchecking import IntChecking
 
 def Menu4():

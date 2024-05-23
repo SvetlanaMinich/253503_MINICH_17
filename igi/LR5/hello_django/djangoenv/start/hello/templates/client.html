@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Аккаунт клиента</title>
+</head>
+<body>
+    <div style="text-align: right; margin-bottom: 20px;"> 
+        <a href="/">Выйти</a> 
+    </div>
+    <h1>Клиент</h1>
+    <div style="border: 1px solid #ccc; padding: 20px;">
+        <h2 style="margin-top: 0;">{{ client.name }}</h2>
+        <p>Возраст: {{ client.age }}</p>
+        <p>Номер телефона: {{ client.phone_number }}</p>
+        <p>Марка машины: {{ client.car_model.name }}</p>
+        <p>Тип машины: {{ client.car_type.name }}</p>
+        <p>Итоговая сумма заказов: {{ client.result_price }}</p>
+        <a href="editclient/{{client.id}}">Редактировать информацию о клиенте</a>
+    </div>
+    <h2>Список заказов</h2> 
+    <a href="createorder/{{client.id}}">Сделать заказ</a>
+    {% if client.orders.all %}
+    <table> 
+        <thead> 
+            <tr> 
+                <th>Номер заказа</th> <th>Мастер</th> <th>Услуга</th> <th>Время заказа</th> <th>Общая стоимость</th> 
+            </tr> 
+        </thead> 
+        <tbody> 
+            {% for order in client.orders.all %} 
+            <tr> 
+                <td>{{ order.id }}</td> <td>{{ order.master.name }}</td> <td>{{ order.service.name }}</td> <td>{{ order.ordering_time }}</td> <td>{{ order.whole_price }}</td> 
+            </tr> 
+            {% endfor %} 
+        </tbody> 
+    </table>
+    {% else %}
+    <p>У клиента пока нет заказов.</p>
+    {% endif %}
+</body>
+</html>

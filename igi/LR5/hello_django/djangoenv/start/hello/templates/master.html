@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Аккаунт мастера</title>
+</head>
+<body>
+    <div style="text-align: right; margin-bottom: 20px;"> 
+        <a href="/">Выйти</a> 
+    </div>
+    <h1>Мастер</h1>
+    <div style="border: 1px solid #ccc; padding: 20px;">
+        <h2 style="margin-top: 0;">{{ master.name }}</h2>
+        <p>Возраст: {{ master.age }}</p>
+        <p>Номер телефона: {{ master.phone_number }}</p>
+        <p>Количество заказов: {{ master.order_count }}</p>
+        <p>Специализация: {{ master.specialization.name }}</p>
+        <a href="editmaster/{{master.id}}">Редактировать информацию о мастере</a>
+    </div>
+    <h2>Заказы</h2>
+    {% if orders %}
+    <table> 
+        <thead> 
+            <tr> 
+                <th>Номер заказа</th> <th>Клиент</th> <th>Услуга</th> <th>Время заказа</th> <th>Общая стоимость</th> 
+            </tr> 
+        </thead> 
+        <tbody> 
+            {% for order in orders %} 
+            <tr> 
+                <td>{{ order.id }}</td> <td>{{ order.client.name }}</td> <td>{{ order.service.name }}</td> <td>{{ order.ordering_time }}</td> <td>{{ order.whole_price }}</td> 
+            </tr> 
+            {% endfor %} 
+        </tbody> 
+    </table>
+    {% else %}
+    <p>У мастера пока нет клиентов.</p>
+    {% endif %}
+</body>
+</html>

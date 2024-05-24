@@ -5,7 +5,21 @@
     <title>Отзывы</title>
 </head>
 <body>
+    <div> 
+        <a href="/">Выйти</a> 
+    </div>
     <h1>Отзывы</h1>
-    <p>Список отзывов с указанием имени, оценки, текста, даты. Кнопка добавить отзыв с переходом к окну регистрации или в личный кабинет залогиненного пользователя.</p>
+    <a href="/register">Оставить отзыв</a><br>
+    {% if reviews %}
+        {% for review in reviews %}
+        <div>
+            <h3>{{ review.user.name }}</h3>
+            <p>{{ review.text }}</p>
+            <p>Дата: {{ review.date }}</p>
+        </div><br>
+        {% endfor %}
+    {% else %}
+    <p>Отзывы отсутствуют.</p>
+    {% endif %}
 </body>
 </html>

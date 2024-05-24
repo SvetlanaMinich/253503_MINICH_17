@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Редактирование отзыва</title> 
+    </head> 
+    <body> 
+        <h1>Ваш отзыв</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label>Текст отзыва:</label>
+            <p>{{ review.text }}</p>
+            <td>Заменить на: </td><textarea name="text" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </body> 
+</html>

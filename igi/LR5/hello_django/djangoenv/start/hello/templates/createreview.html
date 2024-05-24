@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Создание отзыва</title> 
+    </head> 
+    <body> 
+        <h1>Создать отзыв</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label>Текст отзыва:</label>
+            <textarea name="text" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </body> 
+</html>

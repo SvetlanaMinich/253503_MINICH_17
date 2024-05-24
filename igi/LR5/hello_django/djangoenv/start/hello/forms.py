@@ -2,9 +2,8 @@ from django import forms
 from .models import Specialization
  
 class UserForm(forms.Form):
-    name = forms.CharField()
-    age = forms.IntegerField()
-    phone_number = forms.CharField()
+    name = forms.CharField(label="Имя")
+
 
 class LoginForm(forms.Form):
     is_master = forms.BooleanField()

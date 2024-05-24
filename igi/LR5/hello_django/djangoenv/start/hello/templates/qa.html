@@ -5,7 +5,17 @@
     <title>Вопрос-ответ</title>
 </head>
 <body>
+    <div> 
+        <a href="/">Выйти</a> 
+    </div>
     <h1>Вопросы-ответы</h1>
-    <p>Список часто задаваемых вопросов и ответов на них с датой добавления на сайт</p>
+    {% for qa in qas %}
+    <div>
+        <h3>{{ qa.question }}</h3>
+        <p>{{ qa.answer }}</p>
+        <p>Дата: {{ qa.date }}</p>
+    </div>
+    <hr>
+    {% endfor %}
 </body>
 </html>

@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.timezone import now
 
 
 #Тип услуг
@@ -15,7 +16,7 @@ class Service(models.Model):
     type = models.ForeignKey(ServiceType, related_name="services", on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.naming
+        return self.name
 
 
 
@@ -60,6 +61,7 @@ class Master(models.Model):
     phone_number = models.CharField(max_length=19)
     specialization = models.ForeignKey(Specialization, related_name="masters", on_delete=models.CASCADE,  default=None)
     order_count = models.PositiveIntegerField()
+    img_url = models.CharField(max_length=200,default='')
 
     def __str__(self):
         return self.name
@@ -89,6 +91,9 @@ class Promocode(models.Model):
     name = models.CharField(max_length=15)
     discount = models.PositiveSmallIntegerField()
 
+    def __str__(self):
+        return self.name
+
 #Заказ
 class Order(models.Model):
     master = models.ForeignKey(Master, related_name="orders", on_delete=models.CASCADE, default=None)
@@ -103,8 +108,37 @@ class Order(models.Model):
             for p in parts:
                 price += p.price
         if prom:
-            price *= (100-prom.discount)
+            price *= 0.01*(100-prom.discount)
         return price
 
+class ClientMaster(models.Model):
+    client = models.ForeignKey(Client, on_delete=models.CASCADE)
+    master = models.ForeignKey(Master, on_delete=models.CASCADE)
+
+
+
+class QA(models.Model):
+    question = models.CharField(max_length=255)
+    answer = models.TextField()
+    date = models.DateField(default=now)
+
+
+class Job(models.Model):
+    title = models.CharField(max_length=50)
+    salary = models.IntegerField()
+    description = models.TextField()
+
+
+class Review(models.Model):
+    user = models.ForeignKey(Client, on_delete=models.DO_NOTHING)
+    text = models.TextField()
+    date = models.DateTimeField(auto_now_add=True)
+
+
+class Article(models.Model):
+    title = models.CharField(max_length=40)
+    text = models.TextField()
+    img_url = models.CharField(max_length=200,default='')
+    created_at = models.DateTimeField(auto_now_add=True)
 
 

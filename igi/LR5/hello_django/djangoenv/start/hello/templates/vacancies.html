@@ -5,7 +5,19 @@
     <title>Вакансии</title>
 </head>
 <body>
+    <div> 
+        <a href="/">Выйти</a> 
+    </div>
     <h1>Вакансии</h1>
-    <p>Список вакансий с описанием</p>
+    {% for job in jobs %}
+    <div>
+        <h2>{{ job.title }}</h2>
+        <p>Зарплата: {{ job.salary }} руб.</p>
+        <p>{{ job.description }}</p>
+    </div>
+    <hr>
+    {% endfor %}
+
+    <p>Для получения дополнительной информации и подачи заявки свяжитесь с нами.</p>
 </body>
 </html>

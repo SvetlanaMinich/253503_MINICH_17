@@ -5,7 +5,23 @@
     <title>Контакты</title>
 </head>
 <body>
-    <h1>Контакты</h1>
-    <p>Фото сотрудников с описанием выполняемых работ, телефонами, почтой и т.д.</p>
+    <div> 
+        <a href="/">Выйти</a> 
+    </div>
+    <h1>Наши сотрудники</h1>
+    {% for master in masters %}
+    <div>
+        {% if master.img_url %}
+        <img src="{{ master.img_url }}" width="150" height="150">
+        {% else %}
+        <img src="https://avatars.mds.yandex.net/i?id=d97ce0a89d90bf016b1cb96a6e86114d3e3c3920-12529201-images-thumbs&n=13" width="150" height="150">
+        {% endif %}
+        <h3>{{ master.name }}</h3>
+        <p>Возраст: {{ master.age }}</p>
+        <p>Телефон: {{ master.phone_number }}</p>
+        <p>Специализация: {{ master.specialization.name }}</p>
+        <p>Количество выполненных заказов: {{ master.order_count }}</p>
+    </div>
+    {% endfor %}
 </body>
 </html>

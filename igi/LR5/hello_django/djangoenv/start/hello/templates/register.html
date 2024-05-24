@@ -17,12 +17,10 @@
         </tr>
         <table>
             <tr>
-                <td>Имя:</td>
-                <td><input type="text" name="name" required></td>
+                {{ form }}
             </tr>
             <tr>
-                <td>Возраст:</td>
-                <td><input type="number" name="age" min="18" required></td>
+                <td>Возраст:<input type="number" name="age" min="18" required></td>
             </tr>
             <tr>
                 <td>Номер телефона:</td>
@@ -39,5 +37,6 @@
         </table>   
         <input href="/master" type="submit" value="Зарегистрироваться"> 
     </form>
+    <a href="/login">Уже есть аккаунт</a>
 </body>
 </html>

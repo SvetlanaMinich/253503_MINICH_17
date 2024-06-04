@@ -8,8 +8,8 @@ from django.utils import timezone
 import requests
 import collections
 from django.views import View
-from .forms import UserForm, LoginForm
-from .models import Master, Client, Specialization, CarModel, CarType, Service, Promocode, Part, Order, ClientMaster, QA, Job, Review, Article
+from .forms import UserForm
+from .models import *
 import statistics
 
 logging.basicConfig(level=logging.INFO, filename="my_log.log",filemode="a",format="%(asctime)s %(levelname)s %(message)s")
@@ -28,6 +28,7 @@ def main(request):
     article.text = response["fact"]
     article.img_url = response2["message"]
     article.title = f"Random Cat Fact - {datetime.datetime.now()}"
+    
     try:
         article.save()
         logging.info(f"{article.title} is saved.")
@@ -35,9 +36,6 @@ def main(request):
         logging.warning(f"{article.title} cannot be saved.")
 
     article = Article.objects.order_by("created_at").last()
-
-    # Получение часового пояса пользователя
-    user_tz = timezone.get_current_timezone()
 
     # Получение текущей даты для пользователя и UTC
     utc_now = datetime.datetime.now(tz=pytz.utc)
@@ -53,15 +51,28 @@ def main(request):
                                          "user_now": datetime.datetime.now().strftime('%d/%m/%Y %H:%M:%S'),
                                          "utc_now": utc_now.strftime('%d/%m/%Y %H:%M:%S'),})
 
+
+
+#Диаграмма matplot
+#login
+#дата рождения
+#меню для каждой страницы
+#рейтинг в отзывах
+
 def statisticsv(request):
+
+    
+
+
     clients = Client.objects.all()
 
     sum = 0
     years = []
     for cl in clients:
-        years.append(cl.age)
-        sum += cl.age
-    avg_age = sum/len(years)
+        age = datetime.date.today().year - cl.age.year
+        years.append(age)
+        sum += age
+    avg_age = round(sum/len(years), 2)
     median_age = statistics.median(years)
 
     sum = 0
@@ -69,12 +80,12 @@ def statisticsv(request):
     for cl in clients:
         sum += cl.result_price
         sale_prices.append(cl.result_price)
-    avg_sale_price = sum/len(clients)
+    avg_sale_price = round(sum/len(clients), 2)
     median_sale_price = statistics.median(sale_prices)
     mode_sale_price = statistics.mode(sale_prices)
 
     alphabet_clients = Client.objects.order_by("name")
-    whole_sale_price = sum
+    whole_sale_price = round(sum, 2)
 
     orders = Order.objects.all()
 
@@ -139,51 +150,74 @@ def vacancies(request):
     return render(request, "vacancies.html", {"jobs" : Job.objects.all()})
 
 def login(request):
+    userform = UserForm()
     if request.method == "POST":
-        tname = request.POST.get("name")
-        tphone_number = "+375 (" + request.POST.get("phone_code") + ") " + request.POST.get("phone_number")
-        usertype = request.POST.get("user_type")
-        if usertype == "master":
-            searched_masters = Master.objects.filter(name=tname)
-            if len(searched_masters) > 0:
-                searched_masters = searched_masters.filter(phone_number = tphone_number)
-                if len(searched_masters) == 1:
-                    logging.info(f"Master {searched_masters.first().name} added.")
-                    return redirect(f'master/{searched_masters.first().pk}')
+        userform = UserForm(request.POST)
+        if not userform.is_valid():
+            tlogin = request.POST.get("login")
+            tpassword = request.POST.get("password")
+            usertype = request.POST.get("user_type")
+            
+            if usertype == "master":
+                searched_masters = MasterCredentials.objects.filter(login = tlogin)
+                if len(searched_masters) > 0:
+                    searched_masters = searched_masters.filter(password = tpassword)
+                    if len(searched_masters) == 1:
+                        logging.info(f"Master {searched_masters.first().master.name} added.")
+                        return redirect(f'master/{searched_masters.first().master.pk}')
+                    else:
+                        logging.warning(f"Master not found.")
+                        return HttpResponseNotFound("Invalid password")
                 else:
                     logging.warning(f"Master not found.")
-                    return HttpResponseNotFound("No master with this phone number found")
+                    return HttpResponseNotFound("No master with this login found")
             else:
-                logging.warning(f"Master not found.")
-                return HttpResponseNotFound("No master with this name found")
-        else:
-            searched_clients = Client.objects.filter(name = tname)
-            if len(searched_clients) > 0:
-                searched_clients = Client.objects.filter(phone_number = tphone_number)
-                if len(searched_clients) == 1:
-                    logging.info(f"Client {searched_clients.first().name} added.")
-                    return redirect(f'client/{searched_clients.first().pk}')
+                searched_clients = ClientCredentials.objects.filter(login = tlogin)
+                if len(searched_clients) > 0:
+                    searched_clients = searched_clients.filter(password = tpassword)
+                    if len(searched_clients) == 1:
+                        logging.info(f"Client {searched_clients.first().client.name} added.")
+                        return redirect(f'client/{searched_clients.first().client.pk}')
+                    else:
+                        logging.warning(f"Client not found.")
+                        return HttpResponseNotFound("Invalid password")
                 else:
                     logging.warning(f"Client not found.")
-                    return HttpResponseNotFound("No client with this phone number found")
-            else:
-                logging.warning(f"Client not found.")
-                return HttpResponseNotFound("No client with this name found")
+                    return HttpResponseNotFound("No client with this login found")
+        else:
+            return HttpResponse("Invalid data")
     else:
-        return render(request, "login.html")
+        return render(request, "login.html", { "form" : userform })
+
+
+def CheckAge(age):
+    min_birthday = datetime.date.today() - datetime.timedelta(days=365*18)
+    if min_birthday < age:
+        return False
+    return True
+
 
 def register(request):
     userform = UserForm()
     if request.method == "POST":
         userform = UserForm(request.POST)
         if userform.is_valid():
+            tpassword = request.POST.get("password")
+            tlogin = request.POST.get("login")
             name = request.POST.get("name")
-            age = request.POST.get("age")
+            age = request.POST.get("date_of_birth")
             tphone_number = "+375 (" + request.POST.get("phone_code") + ") " + request.POST.get("phone_number")
             usertype = request.POST.get("user_type")
+
+            dob = datetime.datetime.strptime(age, "%Y-%m-%d").date()
+
+            is_adult = CheckAge(dob)
+            if is_adult == False:
+                return HttpResponse("You must be 18+ y/o.")
+            
             if usertype == "master":
-                if Master.objects.filter(phone_number = tphone_number).exists():
-                    return HttpResponse("Master with this phone_number already exists.")
+                if MasterCredentials.objects.filter(login = tlogin).exists():
+                    return HttpResponse("Master with this login already exists.")
                 new_master = Master()
                 new_master.name = name
                 new_master.age = age
@@ -191,10 +225,15 @@ def register(request):
                 new_master.order_count = 0
                 new_master.specialization = Specialization.objects.first()
                 new_master.save()
+                new_master_cred = MasterCredentials()
+                new_master_cred.master = new_master
+                new_master_cred.login = tlogin
+                new_master_cred.password = tpassword
+                new_master_cred.save()
                 return redirect(f'master/{new_master.pk}')
             else:
-                if Client.objects.filter(phone_number = tphone_number).exists():
-                    return HttpResponse("Client with this phone_number already exists.")
+                if ClientCredentials.objects.filter(login = tlogin).exists():
+                    return HttpResponse("Client with this login already exists.")
                 new_client = Client()
                 new_client.name = name
                 new_client.age = age
@@ -203,6 +242,11 @@ def register(request):
                 new_client.car_model = CarModel.objects.first()
                 new_client.car_type = CarType.objects.first()
                 new_client.save()
+                new_cl_creds = ClientCredentials()
+                new_cl_creds.client = new_client
+                new_cl_creds.login = tlogin
+                new_cl_creds.password = tpassword
+                new_cl_creds.save()
                 return redirect(f'client/{new_client.pk}')
         else:
             return HttpResponse("Invalid data")
@@ -298,9 +342,11 @@ def createreview(request, client_id):
     user = Client.objects.get(id = client_id)
     if request.method == "POST":
         ttext = request.POST.get("text")
+        trating = request.POST.get("rating")
         new_review = Review()
         new_review.user = user
         new_review.text = ttext
+        new_review.rating = int(trating)
         new_review.save()
         return redirect('client',client_id = user.pk)
     else:
@@ -311,7 +357,10 @@ def editreview(request, client_id, review_id):
     review = Review.objects.get(id = review_id)
     if request.method == "POST":
         ttext = request.POST.get("text")
+        trating = request.POST.get("rating")
+
         Review.objects.filter(id = review_id).update(text = ttext)
+        Review.objects.filter(id = review_id).update(rating = int(trating))
         return redirect('client',client_id = user.pk)
     else:
         return render(request,"editreview.html", {"review" : review})

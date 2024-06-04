@@ -17,20 +17,12 @@
         </tr>
         <table>
             <tr>
-                <td>Имя:</td>
-                <td><input type="text" name="name" required></td>
+                <td>Логин:</td>
+                <td>{{ form.login }}</td>
             </tr>
             <tr>
-                <td>Номер телефона:</td>
-                    <td>
-                        <select name="phone_code" required>
-                            <option value="">Выберите код оператора</option>
-                            <option value="44">+375 (44)</option>
-                            <option value="25">+375 (25)</option>
-                            <option value="29">+375 (29)</option>
-                        </select>
-                        <input type="tel" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-                    </td>
+                <td>Пароль:</td>
+                <td>{{ form.password }}</td>
             </tr>
         </table>
         <input type="submit" value="Войти">

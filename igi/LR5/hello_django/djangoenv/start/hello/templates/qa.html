@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Вопрос-ответ</title>
-</head>
-<body>
-    <div> 
-        <a href="/">Выйти</a> 
-    </div>
-    <h1>Вопросы-ответы</h1>
-    {% for qa in qas %}
-    <div>
-        <h3>{{ qa.question }}</h3>
-        <p>{{ qa.answer }}</p>
-        <p>Дата: {{ qa.date }}</p>
-    </div>
-    <hr>
-    {% endfor %}
-</body>
-</html>
+{% extends "menu.html" %}
+{% block title %}Вопрос-ответ{% endblock title %}
+{% block header %}Вопросы-ответы{% endblock header %}
+
+{% block content %}
+{% for qa in qas %}
+<div>
+    <h3>{{ qa.question }}</h3>
+    <p>{{ qa.answer }}</p>
+    <p>Дата: {{ qa.date }}</p>
+</div>
+<hr>
+{% endfor %}
+{% endblock content %}

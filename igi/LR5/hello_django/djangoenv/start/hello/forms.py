@@ -3,6 +3,8 @@ from .models import Specialization
  
 class UserForm(forms.Form):
     name = forms.CharField(label="Имя")
+    login = forms.CharField(label="Логин")
+    password = forms.CharField(label="Пароль", widget=forms.PasswordInput())
 
 
 class LoginForm(forms.Form):

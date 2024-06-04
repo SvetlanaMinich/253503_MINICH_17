@@ -34,10 +34,19 @@ class CarType(models.Model):
     def __str__(self):
         return self.name
 
+
+#Специализация мастеров
+class Specialization(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+    
+
 #Клиент
 class Client(models.Model):
     name = models.CharField(max_length=30)
-    age = models.PositiveSmallIntegerField() #min = 18
+    age = models.DateField()
     phone_number = models.CharField(max_length=19) # +375 (44) xxx-xx-xx
     result_price = models.PositiveIntegerField() #for promocode
     car_model = models.ForeignKey(CarModel, related_name="clients", on_delete=models.DO_NOTHING)
@@ -46,18 +55,10 @@ class Client(models.Model):
     def __str__(self):
         return self.name()
 
-
-#Специализация мастеров
-class Specialization(models.Model):
-    name = models.CharField(max_length=50)
-
-    def __str__(self):
-        return self.name
-
 #Мастер
 class Master(models.Model):
     name = models.CharField(max_length=30)
-    age = models.PositiveSmallIntegerField()
+    age = models.DateField()
     phone_number = models.CharField(max_length=19)
     specialization = models.ForeignKey(Specialization, related_name="masters", on_delete=models.CASCADE,  default=None)
     order_count = models.PositiveIntegerField()
@@ -66,6 +67,17 @@ class Master(models.Model):
     def __str__(self):
         return self.name
 
+
+class ClientCredentials(models.Model):
+    client = models.OneToOneField(Client, on_delete=models.CASCADE, primary_key=True)
+    login = models.CharField(max_length=20, default="login")
+    password = models.CharField(max_length=20, default="password")
+
+
+class MasterCredentials(models.Model):
+    master = models.OneToOneField(Master, on_delete=models.CASCADE, primary_key=True)
+    login = models.CharField(max_length=20, default="login")
+    password = models.CharField(max_length=20, default="password")
 
 
 #Вид запчастей
@@ -111,6 +123,7 @@ class Order(models.Model):
             price *= 0.01*(100-prom.discount)
         return price
 
+
 class ClientMaster(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
     master = models.ForeignKey(Master, on_delete=models.CASCADE)
@@ -128,11 +141,12 @@ class Job(models.Model):
     salary = models.IntegerField()
     description = models.TextField()
 
-
+#добавить рейтинг
 class Review(models.Model):
     user = models.ForeignKey(Client, on_delete=models.DO_NOTHING)
     text = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
+    rating = models.PositiveSmallIntegerField(default=5)
 
 
 class Article(models.Model):

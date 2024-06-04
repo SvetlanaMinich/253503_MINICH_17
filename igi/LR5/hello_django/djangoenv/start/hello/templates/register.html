@@ -8,34 +8,44 @@
     <h1>Регистрация</h1>
     <form method="POST">
         {% csrf_token %}
-        <tr>
-            <td>Тип пользователя:</td>
-            <td>
-                <label><input type="radio" name="user_type" value="master"> Мастер</label>
-                <label><input type="radio" name="user_type" value="client"> Клиент</label>
-            </td>
-        </tr>
         <table>
             <tr>
-                {{ form }}
+                <td>Логин:</td>
+                <td>{{ form.login }}</td>
             </tr>
             <tr>
-                <td>Возраст:<input type="number" name="age" min="18" required></td>
+                <td>Пароль:</td>
+                <td>{{ form.password }}</td>
+            </tr>
+            <tr>
+                <td>Тип пользователя:</td>
+                <td>
+                    <label><input type="radio" name="user_type" value="master"> Мастер</label>
+                    <label><input type="radio" name="user_type" value="client"> Клиент</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Имя:</td>
+                <td>{{ form.name }}</td>
+            </tr>
+            <tr>
+                <td>Дата рождения:</td>
+                <td><input type="date" name="date_of_birth" required></td>
             </tr>
             <tr>
                 <td>Номер телефона:</td>
-                    <td>
-                        <select name="phone_code" required>
-                            <option value="">Выберите код оператора</option>
-                            <option value="44">+375 (44)</option>
-                            <option value="25">+375 (25)</option>
-                            <option value="29">+375 (29)</option>
-                        </select>
-                        <input type="tel" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-                    </td>
+                <td>
+                    <select name="phone_code" required>
+                        <option value="">Выберите код оператора</option>
+                        <option value="44">+375 (44)</option>
+                        <option value="25">+375 (25)</option>
+                        <option value="29">+375 (29)</option>
+                    </select>
+                    <input type="tel" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                </td>
             </tr>
         </table>   
-        <input href="/master" type="submit" value="Зарегистрироваться"> 
+        <input type="submit" value="Зарегистрироваться"> 
     </form>
     <a href="/login">Уже есть аккаунт</a>
 </body>

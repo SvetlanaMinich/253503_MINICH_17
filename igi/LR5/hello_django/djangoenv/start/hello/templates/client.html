@@ -64,6 +64,7 @@
         <h3>{{ review.user.name }}</h3>
         <p>{{ review.text }}</p>
         <p>Дата: {{ review.date }}</p>
+        <p>Рейтинг: {{ review.rating }} из 5</p>
         <a href="editreview/{{client.id}}/{{review.id}}">Редактировать</a>
         <a href="deletereview/{{client.id}}/{{review.id}}">Удалить</a>
     </div><br>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ service.name }}</title>
+</head>
+<body>
+    <h1>{{ service.name }}</h1>
+    
+    <div id="service-description_id" name="service-description">
+        <p><strong>Стоимость:</strong> {{ service.price }} руб.</p>
+        <p><strong>Категория:</strong> {{ service.type }}</p>
+    </div>
+    
+    <div id="add-to-cart-form_id" name="add-to-cart-form">
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" id="add-to-cart-btn_id" name="add-to-cart-btn">Добавить в корзину</button>
+        </form>
+    </div>
+
+</body>
+</html>

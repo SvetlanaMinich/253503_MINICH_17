@@ -1,0 +1,540 @@
+INFO:django.utils.autoreload:C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:17:26,042 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:17:26,374 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:20:05,145 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:20:05,594 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:20:22,821 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:20:23,274 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:23:12,116 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:23:12,569 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:23:39,068 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:23:39,451 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:23:57,179 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:23:57,811 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:24:04,676 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:24:05,266 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:24:20,336 WARNING Master not found.
+2024-05-25 00:24:20,337 WARNING Not Found: /login/
+2024-05-25 00:24:26,893 WARNING Master not found.
+2024-05-25 00:24:26,893 WARNING Not Found: /login/
+2024-05-25 00:24:31,469 WARNING Client not found.
+2024-05-25 00:24:31,470 WARNING Not Found: /login/
+2024-05-25 00:24:43,781 INFO Client Sveta added.
+2024-05-25 00:25:01,466 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:25:02,293 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:25:18,938 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:25:19,120 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:25:32,561 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:25:32,719 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 00:33:50,305 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\models.py changed, reloading.
+2024-05-25 00:33:50,308 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\models.py changed, reloading.
+2024-05-25 09:12:14,291 WARNING Random Cat Fact - 2024-05-25 09:12:08.751375 cannot be saved.
+2024-05-25 09:12:14,642 WARNING Not Found: /favicon.ico
+2024-05-25 09:12:37,099 WARNING Random Cat Fact - 2024-05-25 09:12:31.558673 cannot be saved.
+2024-05-25 09:12:51,570 WARNING Random Cat Fact - 2024-05-25 09:12:46.015602 cannot be saved.
+2024-05-25 09:13:14,052 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 09:13:24,133 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 09:13:36,019 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 31, in main
+    article.save()
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: database is locked
+2024-05-25 09:13:50,214 INFO Random Cat Fact - 2024-05-25 09:13:50.194323 is saved.
+2024-05-25 09:13:54,064 INFO Random Cat Fact - 2024-05-25 09:13:54.047483 is saved.
+2024-05-25 09:13:57,825 INFO Random Cat Fact - 2024-05-25 09:13:57.800066 is saved.
+2024-05-25 09:14:12,720 INFO Client Sveta added.
+2024-05-25 09:22:30,563 INFO Random Cat Fact - 2024-05-25 09:22:30.546087 is saved.
+2024-05-25 09:23:52,705 INFO Random Cat Fact - 2024-05-25 09:23:52.685565 is saved.
+2024-05-25 09:26:43,679 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\admin.py changed, reloading.
+2024-05-25 09:27:16,731 ERROR Internal Server Error: /admin/hello/part/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\contrib\admin\options.py", line 2018, in changelist_view
+    response = self.response_action(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\contrib\admin\options.py", line 1650, in response_action
+    response = func(self, request, queryset)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\admin.py", line 30, in display_parts_by_type
+    parts = PartType.objects.filter(part_type=part_type)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'part_type' into field. Choices are: id, name, parts
+2024-05-25 09:28:02,545 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\admin.py changed, reloading.
+2024-05-25 09:28:18,540 ERROR Internal Server Error: /admin/hello/parttype/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\contrib\admin\options.py", line 2018, in changelist_view
+    response = self.response_action(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\contrib\admin\options.py", line 1650, in response_action
+    response = func(self, request, queryset)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\admin.py", line 29, in display_parts_by_type
+    parts = PartType.objects.filter(part_type=part_type)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'part_type' into field. Choices are: id, name, parts
+2024-05-25 09:30:27,114 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\admin.py changed, reloading.
+2024-05-25 09:30:32,938 ERROR Internal Server Error: /admin/hello/parttype/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\contrib\admin\options.py", line 2018, in changelist_view
+    response = self.response_action(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\contrib\admin\options.py", line 1650, in response_action
+    response = func(self, request, queryset)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\admin.py", line 34, in display_parts_by_type
+    self.message_user(request, f"- Order: {part.order.id}, Quantity: {part.quantity}, Price: {part.price}")
+AttributeError: 'Part' object has no attribute 'order'
+2024-05-25 09:31:29,713 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\admin.py changed, reloading.
+2024-05-25 09:34:09,680 INFO Random Cat Fact - 2024-05-25 09:34:09.660717 is saved.
+2024-05-25 09:34:38,227 INFO Random Cat Fact - 2024-05-25 09:34:38.209558 is saved.
+2024-05-25 10:03:08,789 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-05-25 10:36:07,689 INFO Random Cat Fact - 2024-05-25 10:36:07.668478 is saved.
+2024-05-25 10:36:08,224 WARNING Not Found: /favicon.ico
+2024-05-25 10:36:57,265 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 10:37:01,681 INFO Random Cat Fact - 2024-05-25 10:37:01.668336 is saved.
+2024-05-25 10:37:09,080 INFO Random Cat Fact - 2024-05-25 10:37:09.062469 is saved.
+2024-05-25 10:42:41,125 INFO Random Cat Fact - 2024-05-25 10:42:41.110367 is saved.
+2024-05-25 10:43:22,884 INFO Random Cat Fact - 2024-05-25 10:43:22.870685 is saved.
+2024-05-25 10:43:35,717 INFO Random Cat Fact - 2024-05-25 10:43:35.702431 is saved.
+2024-05-25 10:43:59,418 INFO Random Cat Fact - 2024-05-25 10:43:59.403779 is saved.
+2024-05-25 10:44:21,792 INFO Random Cat Fact - 2024-05-25 10:44:21.780187 is saved.
+2024-05-25 10:44:39,308 INFO Random Cat Fact - 2024-05-25 10:44:39.292092 is saved.
+2024-05-25 10:49:03,374 INFO Random Cat Fact - 2024-05-25 10:49:03.361961 is saved.
+2024-05-25 10:50:19,136 INFO Master Mark added.
+2024-05-25 10:51:46,611 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 10:53:36,636 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-05-25 10:54:03,407 INFO Random Cat Fact - 2024-05-25 10:54:03.395418 is saved.
+2024-05-25 10:54:12,450 INFO Random Cat Fact - 2024-05-25 10:54:12.436285 is saved.
+2024-05-25 10:56:31,123 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\models.py changed, reloading.
+2024-06-03 14:15:18,039 INFO Random Cat Fact - 2024-06-03 14:15:18.034311 is saved.
+2024-06-03 14:15:18,808 WARNING Not Found: /favicon.ico
+2024-06-03 14:16:10,688 ERROR Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: hello_master.age
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 205, in register
+    new_master.save()
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: hello_master.age
+2024-06-03 14:18:20,179 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\models.py changed, reloading.
+2024-06-03 14:23:23,751 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 14:24:31,910 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 14:26:07,274 INFO Random Cat Fact - 2024-06-03 14:26:07.260129 is saved.
+2024-06-03 14:26:54,194 ERROR Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 205, in register
+    is_adult = CheckAge(age)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 187, in CheckAge
+    min_birthday = datetime.datetime.today() - datetime.datetime.day(365*18)
+TypeError: 'getset_descriptor' object is not callable
+2024-06-03 14:28:33,356 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 14:28:48,718 ERROR Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 205, in register
+    is_adult = CheckAge(age)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 188, in CheckAge
+    if age > min_birthday:
+TypeError: '>' not supported between instances of 'NoneType' and 'datetime.datetime'
+2024-06-03 14:30:30,292 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 14:30:44,766 ERROR Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: hello_master.age
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 219, in register
+    new_master.save()
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: hello_master.age
+2024-06-03 14:31:27,654 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 14:31:37,509 ERROR Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: hello_master.age
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 220, in register
+    new_master.save()
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: hello_master.age
+2024-06-03 18:24:32,768 INFO Random Cat Fact - 2024-06-03 18:24:32.755311 is saved.
+2024-06-03 18:24:33,459 WARNING Not Found: /favicon.ico
+2024-06-03 18:25:09,353 ERROR Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 205, in register
+    is_adult = CheckAge(age)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 187, in CheckAge
+    min_birthday = datetime.datetime.today() - age
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2024-06-03 18:25:59,433 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 18:26:06,129 ERROR Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 205, in register
+    is_adult = CheckAge(age)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 187, in CheckAge
+    min_birthday = datetime.date.today() - age
+TypeError: unsupported operand type(s) for -: 'datetime.date' and 'NoneType'
+2024-06-03 18:26:33,858 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 18:31:59,753 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 18:32:17,393 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 18:32:33,132 ERROR Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 205, in register
+    dob = datetime.datetime.strptime(age, "%Y-%m-%d").date()
+TypeError: strptime() argument 1 must be str, not None
+2024-06-03 18:32:44,691 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 18:33:03,388 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 18:33:09,957 ERROR Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 207, in register
+    is_adult = CheckAge(dob)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 188, in CheckAge
+    if min_birthday > 18:
+TypeError: '>' not supported between instances of 'datetime.timedelta' and 'int'
+2024-06-03 18:33:46,035 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 18:34:20,818 INFO Random Cat Fact - 2024-06-03 18:34:20.806557 is saved.
+2024-06-03 18:38:42,829 INFO Random Cat Fact - 2024-06-03 18:38:42.818096 is saved.
+2024-06-03 18:43:27,784 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 18:43:30,086 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 18:43:37,124 INFO Master ben env added.
+2024-06-03 18:43:47,419 INFO Random Cat Fact - 2024-06-03 18:43:47.408101 is saved.
+2024-06-03 18:44:45,004 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\models.py changed, reloading.
+2024-06-03 18:45:21,201 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\models.py changed, reloading.
+2024-06-03 18:48:23,695 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 18:48:52,072 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 18:54:53,000 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 18:56:22,416 INFO Random Cat Fact - 2024-06-03 18:56:22.404851 is saved.
+2024-06-03 18:56:45,271 INFO Random Cat Fact - 2024-06-03 18:56:45.262014 is saved.
+2024-06-03 18:57:05,188 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 19:03:14,885 INFO Random Cat Fact - 2024-06-03 19:03:14.876117 is saved.
+2024-06-03 19:08:34,825 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 19:08:49,329 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 19:10:56,074 INFO Random Cat Fact - 2024-06-03 19:10:56.067671 is saved.
+2024-06-03 19:11:21,362 ERROR Internal Server Error: /statistics/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 69, in statisticsv
+    sum += cl.age
+TypeError: unsupported operand type(s) for +=: 'int' and 'NoneType'
+2024-06-03 19:13:20,932 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 19:13:32,384 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 19:13:37,773 ERROR Internal Server Error: /statistics/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 68, in statisticsv
+    age = datetime.datetime.now().year - cl.age.year
+AttributeError: 'NoneType' object has no attribute 'year'
+2024-06-03 19:14:56,545 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 19:15:01,430 ERROR Internal Server Error: /statistics/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 68, in statisticsv
+    age = datetime.datetime.now().year - cl.age.year
+AttributeError: 'NoneType' object has no attribute 'year'
+2024-06-03 19:15:07,740 ERROR Internal Server Error: /statistics/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 68, in statisticsv
+    age = datetime.datetime.now().year - cl.age.year
+AttributeError: 'NoneType' object has no attribute 'year'
+2024-06-03 19:15:27,941 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 19:15:32,449 ERROR Internal Server Error: /statistics/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 68, in statisticsv
+    age = datetime.date.today().year - cl.age.year
+AttributeError: 'NoneType' object has no attribute 'year'
+2024-06-03 19:16:07,421 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 19:16:10,709 ERROR Internal Server Error: /statistics/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py", line 68, in statisticsv
+    age = datetime.date.today() - cl.age
+TypeError: unsupported operand type(s) for -: 'datetime.date' and 'NoneType'
+2024-06-03 19:18:08,058 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 19:19:16,158 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 19:19:40,120 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-06-03 19:20:07,221 INFO C:\253503_MINICH_17\igi\LR5\hello_django\djangoenv\start\hello\views.py changed, reloading.

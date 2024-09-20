@@ -1,0 +1,83 @@
+{% extends "menu.html" %}
+{% block title %}Главная страница{% endblock title %}
+{% block header %}
+<div class='banner'>
+    <img src='https://t4.ftcdn.net/jpg/04/60/44/41/360_F_460444183_vSecqcHBvOvXleTRx1Po500hC3pvB0Ul.jpg'
+    width='850'
+    height='200'>
+    {% comment %} <img src='https://t3.ftcdn.net/jpg/04/60/44/42/360_F_460444211_E7j3njYE705Rk1guKz9LKh58gFgiTybV.jpg'
+    width='850'
+    height='200'>
+    <img src='https://t3.ftcdn.net/jpg/02/94/79/80/360_F_294798032_i3pg9SpMkrVhkKzdMNaZWRtsM9mc3p5c.jpg'
+    width='850'
+    height='200'> {% endcomment %}
+</div>
+{% endblock header %}
+
+{% block content %}
+<div> 
+    <a href="/login">Войти</a> 
+    <a href="/register">Зарегистрироваться</a> 
+</div>
+<div>
+    <img src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-car-repair-logo-in-line-art-style-with-gears-png-image_5821463.png" 
+    alt="logo"
+    width='50'
+    height='50'>
+</div>
+
+<p>Текущая дата и время для Вашего часового пояса: {{ user_now }}</p>
+<p>Текущая дата и время в UTC: {{ utc_now }}</p>
+{% if article %} 
+<h3>{{ article.title }}</h3> 
+<p>{{ article.text }}</p> 
+<img src="{{ article.img_url }}" width="150" height="150"> 
+{% else %} 
+<p>Нет опубликованных статей.</p> 
+{% endif %}
+
+<h2>Услуги</h2>
+<form method="POST">
+    {% csrf_token %}
+    <label>Стоимость от:</label>
+    <input type="number" name="price_from" required>
+    <label> до:</label>
+    <input type="number" name="price_to" required>
+    <button type="submit">Применить фильтр</button>
+</form><br>
+{% if services %}
+<table>
+    <thead>
+        <tr>
+            <th>Название услуги</th>
+            <th>Цена</th>
+            <th>Тип услуги</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for service in services %}
+        <tr>
+            <td>{{ service.name }}</td>
+            <td>{{ service.price }}</td>
+            <td>{{ service.type.name }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>Список услуг пока пуст.</p>
+{% endif %}
+{% if partners %}
+<div class="partners">
+<h2>Наши партнёры</h2>
+    <div id="partners-list">
+        {% for partner in partners %}
+            <a href="{{ partner.website }}">
+                <img src="{{ partner.logo_url }}" alt="{{ partner.name }}" title="{{ partner.name }}" width="100">
+            </a><br>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+{% endblock content %}
+

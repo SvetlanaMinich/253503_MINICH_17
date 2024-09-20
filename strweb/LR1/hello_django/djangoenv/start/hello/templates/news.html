@@ -1,0 +1,32 @@
+{% extends "menu.html" %}
+{% block title %}Новости{% endblock title %}
+{% block header %}Новости{% endblock header %}
+
+{% block content %}
+{% if articles %}
+    <table border="0" cellpadding="10">
+        {% for article in articles %}
+        <tr>
+            <td>
+                <!-- Изображение статьи -->
+                <img src="{{ article.img_url }}" width="150" height="150" alt="{{ article.title }}">
+            </td>
+            <td>
+                <!-- Заголовок статьи -->
+                <h2>{{ article.title }}</h2>
+                
+                <!-- Краткое содержание статьи (одно предложение) -->
+                <p>{{ article.text|truncatewords:20 }}</p>
+                
+                <!-- Кнопка "Читать далее" -->
+                <form action="{% url 'article_detail' article.id %}" method="GET">
+                    <button type="submit">Читать далее</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+<p>Нет доступных новостей.</p>
+{% endif %}
+{% endblock content %}

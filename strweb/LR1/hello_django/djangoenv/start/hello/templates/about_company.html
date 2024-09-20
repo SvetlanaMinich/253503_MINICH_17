@@ -1,0 +1,37 @@
+{% extends "menu.html" %}
+{% block title %}О компании{% endblock title %}
+{% block header %}О компании{% endblock header %}
+
+{% block content %}
+    <div class="about_company_main">
+        <table>
+            <tr>
+                <!-- Логотип компании -->
+                <td>
+                    <img src="{{ company.logo_url }}" alt="Логотип компании" width="100">
+                </td>
+                
+                <!-- Описание компании -->
+                <td>
+                    {{ company.description }}
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    {% comment %} <!-- Видео о компании -->
+    <iframe width="560" height="315" src="{{ company.video_url }}" 
+            title="Видео о компании" frameborder="0" allowfullscreen></iframe> {% endcomment %}
+
+    <!-- История компании по годам -->
+    <h2>История компании</h2>
+    <p>{{ company.history|linebreaks }}</p> <!-- Используем фильтр, чтобы форматировать текст по строкам -->
+
+    <!-- Реквизиты компании -->
+    <h2>Реквизиты</h2>
+    <p>{{ company.requisites|linebreaks }}</p> <!-- Аналогично форматируем реквизиты -->
+
+    <!-- Сертификат компании (пока просто текст) -->
+    <h2>Сертификат</h2>
+    <img src="{{ company.certificate }}" alt="Сертификат компании" width="300">
+{% endblock content %}

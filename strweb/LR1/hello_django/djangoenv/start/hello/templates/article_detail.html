@@ -1,0 +1,10 @@
+{% extends "menu.html" %}
+{% block title %}{{ article.title }}{% endblock title %}
+{% block header %}{{ article.title }}{% endblock header %}
+
+{% block content %}
+    <h1>{{ article.title }}</h1>
+    <img src="{{ article.img_url }}" alt="{{ article.title }}" width="300">
+    <p>{{ article.text }}</p>
+    <p><small>Дата публикации: {{ article.created_at }}</small></p>
+{% endblock content %}

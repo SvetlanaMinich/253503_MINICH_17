@@ -170,3 +170,13 @@ class CompanyInfo(models.Model):
     history = models.TextField()   # История компании по годам (можно в формате текста)
     requisites = models.TextField()  # Реквизиты компании
     certificate = models.TextField() # Текст сертификата
+
+
+class CartItem(models.Model):
+    user = models.ForeignKey(Client, on_delete=models.CASCADE)
+    master = models.ForeignKey(Master, on_delete=models.CASCADE, null=True)
+    service = models.ForeignKey(Service, on_delete=models.CASCADE)
+    quantity = models.PositiveIntegerField(default=1)
+
+    def total_price(self):
+        return self.service.price * self.quantity

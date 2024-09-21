@@ -20,6 +20,7 @@ from hello import views
 
 urlpatterns = [
     path('', views.main),
+    path('service_info_not/<int:service_id>', views.service_info_not, name='service_info_not'),
     path('admin/', admin.site.urls),
     path('about_company/',views.about_company),
     path('contacts/',views.contacts),
@@ -36,15 +37,23 @@ urlpatterns = [
     path('login/master/<int:master_id>',views.mastersview, name="master"),
     path('register/client/<int:client_id>',views.clientsview, name="client"),
     path('login/client/<int:client_id>',views.clientsview, name="client"),
+
+
+    path('register/client/createorder/<int:client_id>',views.createorder, name="createorder"),
+    path('login/client/createorder/<int:client_id>',views.createorder, name="createorder"),
+
+
     path('register/',views.register),
     path('login/',views.login),
 
     re_path(r'^(login|register)/master/editmaster/(?P<master_id>\d+)', views.editmaster, name="editmaster"),
     re_path(r'^(login|register)/client/editclient/(?P<client_id>\d+)', views.editclient, name="editclient"),
 
+    re_path(r'^(login|register)/client/createorder/(?P<client_id>\d+)/service_info_registered/(?P<service_id>\d+)', views.service_info_registered, name='service_info_registered'),
     re_path(r'^(login|register)/client/createorder/(?P<client_id>\d+)', views.createorder, name="createorder"),
 
-    
+    re_path(r'^(login|register)/client/createorder/cart/(?P<client_id>\d+)', views.cartview, name="cart"),
+
     re_path(r'^(login|register)/client/editreview/(?P<client_id>\d+)/(?P<review_id>\d+)', views.editreview, name="editreview"),
     re_path(r'^(login|register)/client/deletereview/(?P<client_id>\d+)/(?P<review_id>\d+)', views.deletereview, name="deletereview"),
     re_path(r'^(login|register)/client/createreview/(?P<client_id>\d+)', views.createreview, name="createreview"),

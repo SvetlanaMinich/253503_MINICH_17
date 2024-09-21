@@ -562,3 +562,1266 @@ TypeError: unsupported operand type(s) for -: 'datetime.date' and 'NoneType'
 2024-09-20 19:38:01,180 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
 2024-09-20 19:38:03,380 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
 2024-09-20 19:38:05,654 WARNING Not Found: /news/7/
+2024-09-21 18:52:06,103 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 18:52:10,224 INFO Random Cat Fact - 2024-09-21 18:52:10.217749 is saved.
+2024-09-21 18:52:11,241 WARNING Not Found: /favicon.ico
+2024-09-21 18:53:00,708 WARNING Not Found: /f"/service_detail/1"
+2024-09-21 18:53:25,439 WARNING Not Found: /f"/service_detail/1"
+2024-09-21 18:53:28,457 WARNING Not Found: /f"/service_detail/1"
+2024-09-21 18:53:33,068 INFO Random Cat Fact - 2024-09-21 18:53:33.057160 is saved.
+2024-09-21 18:53:36,794 WARNING Not Found: /service_detail/1
+2024-09-21 18:53:54,288 INFO Random Cat Fact - 2024-09-21 18:53:54.276952 is saved.
+2024-09-21 18:53:57,241 ERROR Internal Server Error: /service_info/2
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 260, in service_info
+    return render(request, 'service_info.html', {'service': service})
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'add_to_cart' not found. 'add_to_cart' is not a valid view function or pattern name.
+2024-09-21 18:56:15,653 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\models.py changed, reloading.
+2024-09-21 18:57:43,856 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 18:59:28,733 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:00:04,010 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:04:27,096 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:04:45,895 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:07:02,106 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:07:10,442 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:07:17,878 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:07:21,248 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:08:08,038 INFO Random Cat Fact - 2024-09-21 19:08:08.028694 is saved.
+2024-09-21 19:10:07,643 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:10:13,109 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:11:14,301 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:11:25,754 WARNING Not Found: /service_info_registered/1
+2024-09-21 19:12:37,399 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:14:03,806 WARNING Not Found: /register/client/createorder/service_info_registered//1
+2024-09-21 19:14:39,821 WARNING Not Found: /register/client/createorder/service_info_registered//5
+2024-09-21 19:15:21,436 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:15:27,594 WARNING Not Found: /register/client/createorder/service_info_registered//2
+2024-09-21 19:16:05,977 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:16:28,896 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:16:37,453 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:16:42,711 WARNING Not Found: /register/client/createorder/service_info_registered//2
+2024-09-21 19:16:51,357 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:16:58,508 WARNING Not Found: /register/client/createorder/service_info_registered//7
+2024-09-21 19:17:07,282 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:19:37,552 WARNING Not Found: /register/client/createorder/service_info_registered//3
+2024-09-21 19:19:46,181 WARNING Not Found: /register/client/createorder/service_info_registered//2
+2024-09-21 19:25:44,808 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:28:18,808 ERROR Internal Server Error: /register/client/createorder/service_info_registered/10/2
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 269, in service_info_registered
+    cart_item = CartItem(client=client, service=service, quantity=1)  # \u041f\u0440\u0438\u043c\u0435\u0440, \u0435\u0441\u043b\u0438 \u0435\u0441\u0442\u044c \u043c\u043e\u0434\u0435\u043b\u044c CartItem
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: CartItem() got unexpected keyword arguments: 'client'
+2024-09-21 19:28:42,533 INFO Random Cat Fact - 2024-09-21 19:28:42.524078 is saved.
+2024-09-21 19:28:57,047 WARNING Client not found.
+2024-09-21 19:28:57,048 WARNING Not Found: /login/
+2024-09-21 19:29:01,828 INFO Client ben added.
+2024-09-21 19:29:10,668 ERROR Internal Server Error: /login/client/createorder/service_info_registered/10/3
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 269, in service_info_registered
+    cart_item = CartItem(client=client, service=service, quantity=1)  # \u041f\u0440\u0438\u043c\u0435\u0440, \u0435\u0441\u043b\u0438 \u0435\u0441\u0442\u044c \u043c\u043e\u0434\u0435\u043b\u044c CartItem
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: CartItem() got unexpected keyword arguments: 'client'
+2024-09-21 19:30:02,819 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:30:08,856 ERROR Internal Server Error: /login/client/createorder/service_info_registered/10/3
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 273, in service_info_registered
+    return redirect('createorder', client_id=client_id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with keyword arguments '{'client_id': '10'}' not found. 1 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)']
+2024-09-21 19:30:43,117 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:30:45,461 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:30:50,725 ERROR Internal Server Error: /login/client/createorder/service_info_registered/10/3
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 273, in service_info_registered
+    return redirect('createorder', client_id=int(client_id))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)']
+2024-09-21 19:31:36,788 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:32:00,678 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:32:22,505 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:33:34,017 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:33:40,059 ERROR Internal Server Error: /login/client/createorder/service_info_registered/10/3
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 273, in service_info_registered
+    return redirect('createorder', client_id=client.pk)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)']
+2024-09-21 19:34:09,120 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:36:22,667 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:37:02,055 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:37:19,268 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:37:35,020 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:37:56,490 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:38:05,663 ERROR Internal Server Error: /login/client/createorder/10/service_info_registered/10/11
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 273, in service_info_registered
+    return redirect('createorder', client_id=client.pk)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)']
+2024-09-21 19:38:21,587 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:38:35,235 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:38:40,387 ERROR Internal Server Error: /login/client/createorder/10/service_info_registered/10/11
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 273, in service_info_registered
+    return redirect('createorder')
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with no arguments not found. 1 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)']
+2024-09-21 19:39:02,930 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:39:08,358 ERROR Internal Server Error: /login/client/createorder/10/service_info_registered/10/11
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 273, in service_info_registered
+    return redirect('createorder', client_id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with arguments '('10',)' not found. 1 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)']
+2024-09-21 19:39:22,171 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:39:26,840 ERROR Internal Server Error: /login/client/createorder/10/service_info_registered/10/11
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 273, in service_info_registered
+    return redirect('createorder', client_id=client_id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with keyword arguments '{'client_id': '10'}' not found. 1 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)']
+2024-09-21 19:39:48,596 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:39:53,771 ERROR Internal Server Error: /login/client/createorder/10/service_info_registered/10/11
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 273, in service_info_registered
+    return redirect('createorder', client_id=int(client_id))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)']
+2024-09-21 19:40:21,635 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:40:38,421 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:41:44,646 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:41:56,231 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:42:01,675 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:42:10,473 WARNING Not Found: /login/client/createorder/10/
+2024-09-21 19:42:44,154 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:43:31,449 WARNING Not Found: /login/client/createorder/10/
+2024-09-21 19:43:35,405 WARNING Not Found: /login/client/createorder/10/
+2024-09-21 19:44:21,705 WARNING Not Found: /login/client/createorder/10/
+2024-09-21 19:44:32,716 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:44:36,841 WARNING Not Found: /login/client/createorder/10/service_info_registered/10/1
+2024-09-21 19:44:46,555 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:44:50,582 WARNING Not Found: /login/client/createorder/10/service_info_registered/10/1
+2024-09-21 19:44:55,394 WARNING Not Found: /login/client/createorder/10/service_info_registered/10/2
+2024-09-21 19:44:58,335 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:45:19,039 WARNING Not Found: /login/client/createorder/10/service_info_registered/10/2
+2024-09-21 19:45:22,611 WARNING Not Found: /login/client/createorder/10/service_info_registered/10/3
+2024-09-21 19:45:40,555 WARNING Not Found: /login/client/createorder/10/service_info_registered/1
+2024-09-21 19:46:15,602 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:46:22,062 WARNING Not Found: /login/client/createorder/10/service_info_registered/4
+2024-09-21 19:46:27,193 WARNING Not Found: /login/client/createorder/10/service_info_registered/10/3
+2024-09-21 19:46:36,993 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:46:41,555 WARNING Not Found: /login/client/createorder/10/
+2024-09-21 19:46:49,860 WARNING Not Found: /login/client/createorder/10/
+2024-09-21 19:47:09,467 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:47:26,541 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:48:05,876 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:48:15,870 ERROR Internal Server Error: /login/client/createorder/10/service_info_registered/10/4
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 273, in service_info_registered
+    return redirect('createorder', client_id=int(client_id))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)']
+2024-09-21 19:48:29,561 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:48:40,066 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:49:07,081 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:49:10,448 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:50:20,088 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:50:43,566 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:50:57,179 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:51:36,578 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:51:44,029 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:51:59,866 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 19:53:40,971 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 19:54:36,367 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\models.py changed, reloading.
+2024-09-21 20:00:04,135 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:00:24,978 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:02:03,906 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:06:30,637 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:06:59,753 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:07:04,120 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:09:02,787 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:09:30,881 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:12:46,951 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:13:42,569 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:25:51,155 INFO Random Cat Fact - 2024-09-21 20:25:51.150537 is saved.
+2024-09-21 20:26:08,371 INFO Client ben added.
+2024-09-21 20:27:10,728 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:28:37,940 WARNING Not Found: /login/client/createorder/service_info_registered/5
+2024-09-21 20:29:11,406 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:29:47,342 WARNING Not Found: /login/client/createorder/service_info_registered//3
+2024-09-21 20:30:41,233 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:31:47,377 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:32:03,252 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:32:13,812 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:35:30,505 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:36:12,493 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:36:21,971 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:36:36,921 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:37:59,794 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:39:16,232 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:39:56,715 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:40:10,533 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:40:49,990 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:40:58,525 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:41:03,002 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:41:09,671 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 330, in createorder
+    return redirect('cart_view', client_id=client_id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart_view' not found. 'cart_view' is not a valid view function or pattern name.
+2024-09-21 20:41:19,047 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:41:31,410 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 330, in createorder
+    return redirect('cart_view', client_id=client_id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart_view' not found. 'cart_view' is not a valid view function or pattern name.
+2024-09-21 20:41:42,315 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 330, in createorder
+    return redirect('cart_view', client_id=client_id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart_view' not found. 'cart_view' is not a valid view function or pattern name.
+2024-09-21 20:41:50,857 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:42:32,593 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 330, in createorder
+    return redirect('cart_view', client_id=client_id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart_view' not found. 'cart_view' is not a valid view function or pattern name.
+2024-09-21 20:42:36,824 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 330, in createorder
+    return redirect('cart_view', client_id=client_id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart_view' not found. 'cart_view' is not a valid view function or pattern name.
+2024-09-21 20:42:46,402 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:43:36,512 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 330, in createorder
+    return redirect('cart', client_id=client_id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/cart/(?P<client_id>\\d+)']
+2024-09-21 20:44:05,648 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:45:05,697 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:45:16,753 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 330, in createorder
+    return redirect('cart', client_id=client_id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/cart/(?P<client_id>\\d+)']
+2024-09-21 20:45:48,763 INFO Random Cat Fact - 2024-09-21 20:45:48.753757 is saved.
+2024-09-21 20:45:58,226 INFO Client ben added.
+2024-09-21 20:46:02,843 ERROR Internal Server Error: /login/client/createorder/10/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 330, in createorder
+    return redirect('cart', client_id=client_id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' with keyword arguments '{'client_id': '10'}' not found. 1 pattern(s) tried: ['(login|register)/client/cart/(?P<client_id>\\d+)']
+2024-09-21 20:46:23,238 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:48:33,070 ERROR Internal Server Error: /login/client/createorder/10/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 330, in createorder
+    return redirect('cart', client_id=client_id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' with keyword arguments '{'client_id': '10'}' not found. 1 pattern(s) tried: ['(login|register)/client/cart/(?P<client_id>\\d+)']
+2024-09-21 20:50:23,323 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:50:33,842 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:50:52,311 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 330, in createorder
+    return redirect('cart', client_id=client_id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/cart/(?P<client_id>\\d+)']
+2024-09-21 20:51:15,964 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:51:20,259 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:51:44,225 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:51:48,559 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:51:53,428 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 330, in createorder
+    return render('cart.html', client_id=client_id)
+TypeError: render() got an unexpected keyword argument 'client_id'
+2024-09-21 20:52:02,130 WARNING Not Found: /login/client/createorder/service_info_registered/10/8
+2024-09-21 20:52:14,304 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:52:34,904 WARNING Not Found: /login/client/createorder/service_info_registered/4
+2024-09-21 20:53:04,952 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 330, in createorder
+    return render('cart.html', client_id=client_id)
+TypeError: render() got an unexpected keyword argument 'client_id'
+2024-09-21 20:53:32,657 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:53:36,098 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:53:46,636 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:53:56,290 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 330, in createorder
+    return render('cart.html')
+TypeError: render() missing 1 required positional argument: 'template_name'
+2024-09-21 20:54:37,850 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:54:41,159 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:54:51,999 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 332, in createorder
+    return render('cart.html', {'cart_items': cart_items, 'total_price': total_price})
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\base.py", line 17, in get_template
+    for origin in self.get_template_sources(template_name):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\cached.py", line 70, in get_template_sources
+    yield from loader.get_template_sources(template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\filesystem.py", line 35, in get_template_sources
+    name = safe_join(template_dir, template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\utils\_os.py", line 17, in safe_join
+    final_path = abspath(join(base, *paths))
+  File "C:\msys64\mingw64\lib\python3.10\ntpath.py", line 162, in join
+    genericpath._check_arg_types('join', path, *paths)
+  File "C:\msys64\mingw64\lib\python3.10\genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'dict'
+2024-09-21 20:55:11,410 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:56:16,299 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:56:25,819 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:57:16,893 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:57:40,266 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 20:58:29,956 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:58:37,411 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:58:41,744 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:58:52,340 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:59:11,074 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 20:59:25,940 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:01:14,948 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 335, in createorder
+    return render(request,"createorder.html", {"client_id" : client_id,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/cart/(?P<client_id>\\d+)']
+2024-09-21 21:01:29,274 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 335, in createorder
+    return render(request,"createorder.html", {"client_id" : client_id,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/cart/(?P<client_id>\\d+)']
+2024-09-21 21:01:53,268 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 21:01:59,024 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 335, in createorder
+    return render(request,"createorder.html", {"client_id" : client_id,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/cart/(?P<client_id>\\d+)']
+2024-09-21 21:02:02,274 ERROR Internal Server Error: /login/client/createorder/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 335, in createorder
+    return render(request,"createorder.html", {"client_id" : client_id,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/cart/(?P<client_id>\\d+)']
+2024-09-21 21:03:51,415 WARNING Not Found: /login/client/createorder/cart/10
+2024-09-21 21:04:25,630 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 21:04:45,226 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 21:05:04,573 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 349, in cartview
+    CartItem.save()
+TypeError: Model.save() missing 1 required positional argument: 'self'
+2024-09-21 21:07:22,483 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:07:36,488 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 348, in cartview
+    cart_it = CartItem.objects.get(id=item_id, user=client)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+hello.models.CartItem.DoesNotExist: CartItem matching query does not exist.
+2024-09-21 21:08:00,610 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:08:36,918 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:08:44,507 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 348, in cartview
+    cart_it = CartItem.objects.get(id=item_id, user=client)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+hello.models.CartItem.DoesNotExist: CartItem matching query does not exist.
+2024-09-21 21:08:49,460 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 348, in cartview
+    cart_it = CartItem.objects.get(id=item_id, user=client)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+hello.models.CartItem.DoesNotExist: CartItem matching query does not exist.
+2024-09-21 21:09:06,493 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:09:11,575 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 348, in cartview
+    cart_it = CartItem.objects.get(id=item_id, user=client)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+hello.models.CartItem.DoesNotExist: CartItem matching query does not exist.
+2024-09-21 21:09:21,203 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 348, in cartview
+    cart_it = CartItem.objects.get(id=item_id, user=client)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+hello.models.CartItem.DoesNotExist: CartItem matching query does not exist.
+2024-09-21 21:09:38,279 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:09:46,743 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:09:52,091 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:11:23,070 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:11:33,927 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 347, in cartview
+    cart_it = CartItem.objects.get(id=item_id, user=client)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+hello.models.CartItem.DoesNotExist: CartItem matching query does not exist.
+2024-09-21 21:11:42,346 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:11:59,531 INFO Random Cat Fact - 2024-09-21 21:11:59.522919 is saved.
+2024-09-21 21:12:07,128 INFO Client ben added.
+2024-09-21 21:13:16,794 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:13:24,228 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:13:46,517 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\urls.py changed, reloading.
+2024-09-21 21:14:32,163 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 342, in cartview
+    return redirect('cart', client_id=client.id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/createorder/cart/(?P<client_id>\\d+)']
+2024-09-21 21:14:59,801 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:15:04,664 WARNING Not Found: /login/client/createorder/cart/createorder/cart
+2024-09-21 21:15:19,893 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:15:23,164 WARNING Not Found: /login/client/createorder/cart/createorder/cart
+2024-09-21 21:15:26,871 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 340, in cartview
+    cart_it = CartItem.objects.get(id=item_id, user=client)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+hello.models.CartItem.DoesNotExist: CartItem matching query does not exist.
+2024-09-21 21:15:40,368 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:16:58,519 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:17:05,593 INFO Random Cat Fact - 2024-09-21 21:17:05.587006 is saved.
+2024-09-21 21:17:16,694 INFO Random Cat Fact - 2024-09-21 21:17:16.684754 is saved.
+2024-09-21 21:17:25,260 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:17:30,044 INFO Random Cat Fact - 2024-09-21 21:17:30.040067 is saved.
+2024-09-21 21:17:36,622 INFO Client ben added.
+2024-09-21 21:17:42,045 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 346, in cartview
+    return redirect('cart', client_id=client.id)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' with keyword arguments '{'client_id': 10}' not found. 1 pattern(s) tried: ['(login|register)/client/createorder/cart/(?P<client_id>\\d+)']
+2024-09-21 21:18:18,375 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:22:49,663 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:23:07,012 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 352, in cartview
+    return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '{{previous_view}}' not found. '{{previous_view}}' is not a valid view function or pattern name.
+2024-09-21 21:23:24,971 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 352, in cartview
+    return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder/' not found. 'createorder/' is not a valid view function or pattern name.
+2024-09-21 21:23:31,668 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 352, in cartview
+    return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder/' not found. 'createorder/' is not a valid view function or pattern name.
+2024-09-21 21:23:43,652 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 352, in cartview
+    return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with arguments '('',)' not found. 3 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)', 'login/client/createorder/(?P<client_id>[0-9]+)\\Z', 'register/client/createorder/(?P<client_id>[0-9]+)\\Z']
+2024-09-21 21:24:11,188 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 352, in cartview
+    return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+2024-09-21 21:24:30,319 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 352, in cartview
+    return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with arguments '('',)' not found. 3 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)', 'login/client/createorder/(?P<client_id>[0-9]+)\\Z', 'register/client/createorder/(?P<client_id>[0-9]+)\\Z']
+2024-09-21 21:24:56,851 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 352, in cartview
+    return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with keyword arguments '{'client_id': ''}' not found. 3 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)', 'login/client/createorder/(?P<client_id>[0-9]+)\\Z', 'register/client/createorder/(?P<client_id>[0-9]+)\\Z']
+2024-09-21 21:25:21,160 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-21 21:25:25,260 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 352, in cartview
+    return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with keyword arguments '{'client_id': ''}' not found. 3 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)', 'login/client/createorder/(?P<client_id>[0-9]+)\\Z', 'register/client/createorder/(?P<client_id>[0-9]+)\\Z']
+2024-09-21 21:25:41,918 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 348, in cartview
+    return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price})
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with keyword arguments '{'client_id': ''}' not found. 3 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)', 'login/client/createorder/(?P<client_id>[0-9]+)\\Z', 'register/client/createorder/(?P<client_id>[0-9]+)\\Z']
+2024-09-21 21:25:57,839 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.

@@ -57,7 +57,7 @@
     <tbody>
         {% for service in services %}
         <tr>
-            <td>{{ service.name }}</td>
+            <td><a href="/service_info_not/{{ service.id }}">{{ service.name }}</a></td>
             <td>{{ service.price }}</td>
             <td>{{ service.type.name }}</td>
         </tr>

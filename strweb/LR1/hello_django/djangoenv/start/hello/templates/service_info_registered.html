@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="UTF-8"> 
+        {% block title %}{{ service.name }}{% endblock title %} 
+    </head> 
+    <body> 
+        
+        {% block header %}{{ service.name }}{% endblock header %}
+
+        {% block content %}
+        <h2>{{ service.name }}</h2>
+        <p><strong>Цена:</strong> {{ service.price }} руб.</p>
+        <p><strong>Тип услуги:</strong> {{ service.type.name }}</p>
+
+        <!-- Кнопка добавления в корзину -->
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Добавить в корзину</button>
+        </form>
+        {% endblock content %}
+    </body>
+</html>

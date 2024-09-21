@@ -1,0 +1,33 @@
+{% block content %}
+    <a href="{% url 'createorder' client_id=client_id %}">Назад</a>
+    <h2>Корзина</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Услуга</th>
+                <th>Количество</th>
+                <th>Цена за единицу</th>
+                <th>Общая цена</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in cart_items %}
+            <tr>
+                <td>{{ item.service.name }}</td>
+                <td>{{ item.service.price }}</td>
+                <td>
+                    <form method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="item_id" value="{{ item.id }}">
+                        <button type="submit" name="remove">Удалить</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h3>Общая стоимость: {{ total_price }}</h3>
+    <button>Оплатить</button>
+{% endblock %}

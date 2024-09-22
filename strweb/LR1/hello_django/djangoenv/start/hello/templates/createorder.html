@@ -15,6 +15,7 @@
                     <th>Название услуги</th>
                     <th>Цена</th>
                     <th>Тип услуги</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -23,6 +24,14 @@
                     <td><a href="{{client_id}}/service_info_registered/{{ service.id }}">{{ service.name }}</a></td>
                     <td>{{ service.price }}</td>
                     <td>{{ service.type.name }}</td>
+                    <!-- Кнопка добавления в корзину -->
+                    <td>
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="serv_id" value="{{ service.id }}">
+                            <button type="submit" name="serv_add">Добавить в корзину</button>
+                        </form>
+                    </td>
                 </tr>
                 {% endfor %}
             </tbody>
@@ -31,6 +40,40 @@
         <p>Список услуг пока пуст.</p>
         {% endif %}
         </td>  
+
+        <br><br>
+        <h3>Список запчастей</h3> 
+        {% if parts %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Название запчасти</th>
+                    <th>Цена</th>
+                    <th>Тип запчасти</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for part in parts %}
+                <tr>
+                    <td><strong>{{ part.name }}</strong></td>
+                    <td>{{ part.price }}</td>
+                    <td>{{ part.type.name }}</td>
+                    <td>
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="part_id" value="{{ part.id }}">
+                            <button type="submit" name="part_add">Добавить в корзину</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>Список запчастей пока пуст.</p>
+        {% endif %}
+
         <br><br>
         <h1><a href="cart/{{client_id}}">Перейти в корзину</a></h1>
     </body> 

@@ -324,30 +324,76 @@ def editclient(request, client_id):
         return render(request, "editclient.html", {"client": client, "car_models" : CarModel.objects.all(), "car_types" : CarType.objects.all()})
     
 
+
+# class CartItem(models.Model):
+#     user = models.ForeignKey(Client, on_delete=models.CASCADE)
+#     master = models.ForeignKey(Master, on_delete=models.CASCADE, null=True)
+#     service = models.ForeignKey(Service, on_delete=models.CASCADE, null=True)
+#     part = models.ForeignKey(Part, on_delete=models.CASCADE, null=True)
+#     quantity = models.PositiveIntegerField(default=1)
+
+#     def total_price(self):
+#         return self.service.price * self.quantity
+    
 def createorder(request, client_id):
     client = Client.objects.get(id = client_id)
     services = Service.objects.all()
+    parts = Part.objects.all()
+
+    if request.method == 'POST':
+        if 'part_add' in request.POST:
+            part_id = request.POST.get('part_id')
+            part = Part.objects.get(id=part_id)
+            cart_item = CartItem(user=client,
+                                 part=part,
+                                 quantity=1)
+        elif 'serv_add' in request.POST:
+            service_id = request.POST.get('serv_id')
+            service = Service.objects.get(id=service_id)
+            specialization = None if not Specialization.objects.filter(name = service.name) else Specialization.objects.filter(name = service.name).first()
+            master = Master.objects.all().first() if not Master.objects.filter(specialization=specialization) else Master.objects.filter(specialization=specialization).first()
+            cart_item = CartItem(user=client, 
+                                 master=master, 
+                                 service=service, 
+                                 quantity=1)  
+        
+        # Логика для добавления услуги в корзину
+        cart_item.save()
+        return redirect('createorder',client_id=client_id)
+    
     return render(request,"createorder.html", {"client_id" : client_id, 
-                                               "services" : Service.objects.all()})
+                                               "services" : services,
+                                               'parts': parts})
     
 
 def cartview(request, client_id):
     client = Client.objects.get(id=client_id)
     
     if request.method == 'POST':
+        item_id = request.POST.get('item_id')
+        cart_item = CartItem.objects.get(id=item_id)
         if 'remove' in request.POST:
-            item_id = request.POST.get('item_id')
-            try:
-                cart_it = CartItem.objects.get(id=item_id, user=client)
-                cart_it.delete()
-            except CartItem.DoesNotExist:
-                # Optionally log this error or handle it as needed
-                pass
+            cart_item.delete()
+            cart_items = CartItem.objects.filter(user=client)
+            total_price = sum(item.total_price() for item in cart_items)
+            return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price,
+                                                 "client_id": client_id})
+        if 'increase_quantity' in request.POST:
+            cart_item.quantity += 1
+            cart_item.save()
             cart_items = CartItem.objects.filter(user=client)
             total_price = sum(item.total_price() for item in cart_items)
             return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price,
                                                  "client_id": client_id})
 
+        if 'decrease_quantity' in request.POST and cart_item.quantity > 1:
+            cart_item.quantity -= 1
+            cart_item.save()
+            cart_items = CartItem.objects.filter(user=client)
+            total_price = sum(item.total_price() for item in cart_items)
+            return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price,
+                                                 "client_id": client_id})
+        
     cart_items = CartItem.objects.filter(user=client)
     total_price = sum(item.total_price() for item in cart_items)
     return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price,
@@ -393,42 +439,42 @@ def deletereview(request, client_id, review_id):
         return render(request,"deletereview.html", {"review" : review})
     
 
-def cart(request):
-    if request.method == "POST":
-        return render(request, "register.html", {'specializations' : Specialization.objects.all()})
-    return render(request, "cart.html")
-    cart_items = CartItem.objects.filter(user=request.user)
+# def cart(request):
+#     if request.method == "POST":
+#         return render(request, "register.html", {'specializations' : Specialization.objects.all()})
+#     return render(request, "cart.html")
+#     cart_items = CartItem.objects.filter(user=request.user)
 
-    if request.method == "POST":
-        action = request.POST.get("action")
-        service_id = request.POST.get("service_id")
-        quantity = int(request.POST.get("quantity", 1))
-        service = Service.objects.get(id=service_id)
+#     if request.method == "POST":
+#         action = request.POST.get("action")
+#         service_id = request.POST.get("service_id")
+#         quantity = int(request.POST.get("quantity", 1))
+#         service = Service.objects.get(id=service_id)
 
-        if action == "add":
-            # Добавление товара в корзину
-            cart_item, created = CartItem.objects.get_or_create(user=request.user, service=service)
-            if not created:
-                cart_item.quantity += quantity
-            cart_item.save()
+#         if action == "add":
+#             # Добавление товара в корзину
+#             cart_item, created = CartItem.objects.get_or_create(user=request.user, service=service)
+#             if not created:
+#                 cart_item.quantity += quantity
+#             cart_item.save()
 
-        elif action == "remove":
-            # Удаление товара из корзины
-            CartItem.objects.filter(user=request.user, service=service).delete()
+#         elif action == "remove":
+#             # Удаление товара из корзины
+#             CartItem.objects.filter(user=request.user, service=service).delete()
 
-        elif action == "increase":
-            # Увеличить количество товара
-            cart_item = CartItem.objects.get(user=request.user, service=service)
-            cart_item.quantity += 1
-            cart_item.save()
+#         elif action == "increase":
+#             # Увеличить количество товара
+#             cart_item = CartItem.objects.get(user=request.user, service=service)
+#             cart_item.quantity += 1
+#             cart_item.save()
 
-        elif action == "decrease":
-            # Уменьшить количество товара
-            cart_item = CartItem.objects.get(user=request.user, service=service)
-            if cart_item.quantity > 1:
-                cart_item.quantity -= 1
-                cart_item.save()
+#         elif action == "decrease":
+#             # Уменьшить количество товара
+#             cart_item = CartItem.objects.get(user=request.user, service=service)
+#             if cart_item.quantity > 1:
+#                 cart_item.quantity -= 1
+#                 cart_item.save()
 
-    total_cost = sum(item.total_price() for item in cart_items)
+#     total_cost = sum(item.total_price() for item in cart_items)
 
-    return render(request, 'cart.html', {'cart_items': cart_items, 'total_cost': total_cost})
+#     return render(request, 'cart.html', {'cart_items': cart_items, 'total_cost': total_cost})

@@ -5,17 +5,35 @@
         <thead>
             <tr>
                 <th>Услуга</th>
+                <th>Запчасть</th>
                 <th>Количество</th>
                 <th>Цена за единицу</th>
                 <th>Общая цена</th>
-                <th>Действия</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
             {% for item in cart_items %}
             <tr>
-                <td>{{ item.service.name }}</td>
-                <td>{{ item.service.price }}</td>
+                {% if item.service %}
+                    <td>{{ item.service.name }}</td>
+                    <td></td>
+                    <td></td>
+                    <td>{{ item.service.price }}</td>
+                    <td>{{ item.total_price }}</td>
+                {%else%}
+                    <td></td>
+                    <td>{{ item.part.name }}</td>
+                    <td><form method="post">
+                        {% csrf_token %}
+                            <input type="hidden" name="item_id" value="{{ item.id }}">
+                            <button type="submit" name="decrease_quantity">-</button>
+                            {{ item.quantity }}
+                            <button type="submit" name="increase_quantity">+</button>
+                    </form></td>
+                    <td>{{ item.part.price }}</td>
+                    <td>{{ item.total_price }}</td>
+                {%endif%}
                 <td>
                     <form method="post">
                         {% csrf_token %}

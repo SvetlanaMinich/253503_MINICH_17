@@ -1825,3 +1825,27 @@ Traceback (most recent call last):
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'createorder' with keyword arguments '{'client_id': ''}' not found. 3 pattern(s) tried: ['(login|register)/client/createorder/(?P<client_id>\\d+)', 'login/client/createorder/(?P<client_id>[0-9]+)\\Z', 'register/client/createorder/(?P<client_id>[0-9]+)\\Z']
 2024-09-21 21:25:57,839 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-22 13:35:12,891 INFO Random Cat Fact - 2024-09-22 13:35:12.877989 is saved.
+2024-09-22 13:35:14,663 WARNING Not Found: /favicon.ico
+2024-09-22 13:35:21,443 INFO Client ben added.
+2024-09-22 13:35:39,063 ERROR Internal Server Error: /login/client/createorder/cart/10
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 387, in cartview
+    total_price = sum(item.total_price() for item in cart_items)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 387, in <genexpr>
+    total_price = sum(item.total_price() for item in cart_items)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\models.py", line 183, in total_price
+    return self.service.price * self.quantity
+AttributeError: 'NoneType' object has no attribute 'price'
+2024-09-22 13:37:17,548 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\models.py changed, reloading.
+2024-09-22 22:09:53,380 INFO Random Cat Fact - 2024-09-22 22:09:53.370403 is saved.
+2024-09-22 22:10:01,685 INFO Client ben added.
+2024-09-22 22:24:23,806 INFO Random Cat Fact - 2024-09-22 22:24:23.795315 is saved.
+2024-09-22 22:27:10,996 INFO Random Cat Fact - 2024-09-22 22:27:10.984124 is saved.
+2024-09-22 22:27:21,199 INFO Random Cat Fact - 2024-09-22 22:27:21.186427 is saved.
+2024-09-22 22:32:35,135 INFO Random Cat Fact - 2024-09-22 22:32:35.122891 is saved.
+2024-09-22 22:35:53,054 INFO Random Cat Fact - 2024-09-22 22:35:53.041552 is saved.

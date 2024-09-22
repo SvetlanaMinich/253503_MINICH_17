@@ -175,8 +175,12 @@ class CompanyInfo(models.Model):
 class CartItem(models.Model):
     user = models.ForeignKey(Client, on_delete=models.CASCADE)
     master = models.ForeignKey(Master, on_delete=models.CASCADE, null=True)
-    service = models.ForeignKey(Service, on_delete=models.CASCADE)
+    service = models.ForeignKey(Service, on_delete=models.CASCADE, null=True)
+    part = models.ForeignKey(Part, on_delete=models.CASCADE, null=True)
     quantity = models.PositiveIntegerField(default=1)
 
     def total_price(self):
-        return self.service.price * self.quantity
+        if self.service:
+            return self.service.price * self.quantity
+        elif self.part:
+            return self.part.price * self.quantity

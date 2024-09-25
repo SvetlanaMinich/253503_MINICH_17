@@ -32,6 +32,7 @@ urlpatterns = [
     path('reviews/',views.reviews),
     path('vacancies/',views.vacancies),
     path('statistics/',views.statisticsv),
+    path('requirements/',views.requirements),
 
     path('register/master/<int:master_id>',views.mastersview, name="master"),
     path('login/master/<int:master_id>',views.mastersview, name="master"),

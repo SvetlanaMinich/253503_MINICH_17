@@ -1,0 +1,43 @@
+{% extends "menu.html" %}
+{% block title %}Requirements{% endblock title %}
+{% block header %}Требования{% endblock header %}
+
+{% block content %}
+<a name="anchor">Якорь</a>
+<p><dfn>HTML-атрибуты</dfn> это специальные слова, которые управляют поведением HTML-элемента.</p>
+
+<blockquote cite="https://html5book.ru/html-attributes/">
+    Некоторые атрибуты не требуют значение, потому что у них есть только одна опция. Они называются логическими атрибутами.
+</blockquote>
+
+<time datetime="2024-09-20">20 сентября 2024 года</time>
+
+<pre>
+    На небе звезды яркие горят,<br>
+    Луна плывет по небу неспешно.<br>
+    Вокруг все тише, сонный дом молчит,<br>
+    И ночь кружится в танце бесконечном.
+</pre>
+
+<a href="https://html5book.ru/html-attributes/" target="_blank">Перейти на сайт</a>
+<a href="https://www.ciz.nl/test-download" download>Скачать документ</a><br>
+<a href="mailto:minichsveta05@gmail.com">Написать на email</a><br>
+<a href="tel:+375445854190">Позвонить нам</a><br>
+
+<figure>
+    <img src="https://www.wfla.com/wp-content/uploads/sites/71/2023/05/GettyImages-1389862392.jpg?w=2560&h=1440&crop=1" alt="Описание изображения" width="100">
+    <figcaption>Подпись под изображением.</figcaption>
+</figure>
+
+<input type="email" id="email" name="email" required><br><br>
+<input type="number" id="age" name="age" min="18" max="100" required><br><br>
+
+<iframe src="https://habr.com/ru/articles/352096/" height="200" width="300" title="Iframe Example"></iframe><br>
+
+<audio controls>
+    <source src="/static/output.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудио.
+</audio><br>
+
+<a href="#anchor">Перейти к Якорю</a>
+{% endblock content %}

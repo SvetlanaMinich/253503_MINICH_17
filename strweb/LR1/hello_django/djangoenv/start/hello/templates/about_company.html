@@ -8,7 +8,7 @@
             <tr>
                 <!-- Логотип компании -->
                 <td>
-                    <img src="{{ company.logo_url }}" alt="Логотип компании" width="100">
+                    <img src="{{ company.logo_url }}" alt="Логотип компании">
                 </td>
                 
                 <!-- Описание компании -->
@@ -19,9 +19,10 @@
         </table>
     </div>
 
-    {% comment %} <!-- Видео о компании -->
-    <iframe width="560" height="315" src="{{ company.video_url }}" 
-            title="Видео о компании" frameborder="0" allowfullscreen></iframe> {% endcomment %}
+    <video width="400" autoplay>
+        <source src="/static/videos/carvideo.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video> <br>
 
     <!-- История компании по годам -->
     <h2>История компании</h2>
@@ -33,5 +34,5 @@
 
     <!-- Сертификат компании (пока просто текст) -->
     <h2>Сертификат</h2>
-    <img src="{{ company.certificate }}" alt="Сертификат компании" width="300">
+    <img src="{{ company.certificate }}" alt="Сертификат компании">
 {% endblock content %}

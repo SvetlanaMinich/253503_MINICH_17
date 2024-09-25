@@ -146,6 +146,11 @@ def reviews(request):
 def vacancies(request):
     return render(request, "vacancies.html", {"jobs" : Job.objects.all()})
 
+
+def requirements(request):
+    return render(request, "requirements.html")
+
+
 def login(request):
     userform = UserForm()
     if request.method == "POST":

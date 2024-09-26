@@ -1869,3 +1869,502 @@ AttributeError: 'NoneType' object has no attribute 'price'
 2024-09-25 21:00:30,908 INFO Random Cat Fact - 2024-09-25 21:00:30.900001 is saved.
 2024-09-25 21:02:02,519 INFO Random Cat Fact - 2024-09-25 21:02:02.511056 is saved.
 2024-09-25 21:07:21,534 INFO Random Cat Fact - 2024-09-25 21:07:21.525939 is saved.
+2024-09-26 17:35:10,085 INFO Random Cat Fact - 2024-09-26 17:35:10.077813 is saved.
+2024-09-26 17:35:10,849 WARNING Not Found: /favicon.ico
+2024-09-26 17:35:25,801 INFO Random Cat Fact - 2024-09-26 17:35:25.791941 is saved.
+2024-09-26 17:37:00,030 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-26 17:38:47,287 INFO Random Cat Fact - 2024-09-26 17:38:47.278955 is saved.
+2024-09-26 17:38:47,606 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: hello_partnercompany.website
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 56, in main
+    return render(request, "main.html", {"services" : Service.objects.all(), "article" : article,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 325, in render
+    if match:
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 414, in __bool__
+    self._fetch_all()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: hello_partnercompany.website
+2024-09-26 17:40:24,893 INFO Random Cat Fact - 2024-09-26 17:40:24.887154 is saved.
+2024-09-26 17:40:25,448 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: hello_partnercompany.website
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 56, in main
+    return render(request, "main.html", {"services" : Service.objects.all(), "article" : article,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 325, in render
+    if match:
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 414, in __bool__
+    self._fetch_all()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: hello_partnercompany.website
+2024-09-26 17:42:42,746 INFO Random Cat Fact - 2024-09-26 17:42:42.738929 is saved.
+2024-09-26 17:42:42,835 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: hello_partnercompanyd.website
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 56, in main
+    return render(request, "main.html", {"services" : Service.objects.all(), "article" : article,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 325, in render
+    if match:
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 414, in __bool__
+    self._fetch_all()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: hello_partnercompanyd.website
+2024-09-26 17:57:27,978 INFO Random Cat Fact - 2024-09-26 17:57:27.971094 is saved.
+2024-09-26 17:57:28,012 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 59, in main
+    "partners" : partners})
+NameError: name 'partners' is not defined
+2024-09-26 17:57:59,581 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-09-26 17:58:04,088 INFO Random Cat Fact - 2024-09-26 17:58:04.080690 is saved.
+2024-09-26 17:58:26,008 INFO Client ben added.
+2024-09-26 17:59:14,269 INFO Random Cat Fact - 2024-09-26 17:59:14.256643 is saved.
+2024-09-26 18:00:01,306 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\msys64\mingw64\lib\python3.10\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\msys64\mingw64\lib\python3.10\ssl.py", line 1071, in _create
+    self.do_handshake()
+  File "C:\msys64\mingw64\lib\python3.10\ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] \u0423\u0434\u0430\u043b\u0435\u043d\u043d\u044b\u0439 \u0445\u043e\u0441\u0442 \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0435\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\adapters.py", line 589, in send
+    resp = conn.urlopen(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\msys64\mingw64\lib\python3.10\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\msys64\mingw64\lib\python3.10\ssl.py", line 1071, in _create
+    self.do_handshake()
+  File "C:\msys64\mingw64\lib\python3.10\ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '\u0423\u0434\u0430\u043b\u0435\u043d\u043d\u044b\u0439 \u0445\u043e\u0441\u0442 \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0435\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 28, in main
+    response = requests.get(url).json()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\adapters.py", line 604, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '\u0423\u0434\u0430\u043b\u0435\u043d\u043d\u044b\u0439 \u0445\u043e\u0441\u0442 \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0435\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435', None, 10054, None))
+2024-09-26 18:00:04,736 INFO Random Cat Fact - 2024-09-26 18:00:04.719826 is saved.
+2024-09-26 18:00:06,772 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\msys64\mingw64\lib\python3.10\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\msys64\mingw64\lib\python3.10\ssl.py", line 1071, in _create
+    self.do_handshake()
+  File "C:\msys64\mingw64\lib\python3.10\ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] \u0423\u0434\u0430\u043b\u0435\u043d\u043d\u044b\u0439 \u0445\u043e\u0441\u0442 \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0435\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\adapters.py", line 589, in send
+    resp = conn.urlopen(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\msys64\mingw64\lib\python3.10\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\msys64\mingw64\lib\python3.10\ssl.py", line 1071, in _create
+    self.do_handshake()
+  File "C:\msys64\mingw64\lib\python3.10\ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '\u0423\u0434\u0430\u043b\u0435\u043d\u043d\u044b\u0439 \u0445\u043e\u0441\u0442 \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0435\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 28, in main
+    response = requests.get(url).json()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\adapters.py", line 604, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '\u0423\u0434\u0430\u043b\u0435\u043d\u043d\u044b\u0439 \u0445\u043e\u0441\u0442 \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0435\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435', None, 10054, None))
+2024-09-26 18:02:07,307 INFO Random Cat Fact - 2024-09-26 18:02:07.296858 is saved.
+2024-09-26 18:12:17,497 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\settings.py changed, reloading.
+2024-09-26 18:13:03,834 INFO Random Cat Fact - 2024-09-26 18:13:03.819632 is saved.
+2024-09-26 18:13:29,628 INFO Random Cat Fact - 2024-09-26 18:13:29.613006 is saved.
+2024-09-26 18:13:55,732 INFO Random Cat Fact - 2024-09-26 18:13:55.717763 is saved.
+2024-09-26 18:14:21,288 INFO Random Cat Fact - 2024-09-26 18:14:21.279194 is saved.
+2024-09-26 18:15:19,001 INFO Random Cat Fact - 2024-09-26 18:15:18.987169 is saved.
+2024-09-26 18:15:19,228 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 56, in main
+    return render(request, "main.html", {"services" : Service.objects.all(), "article" : article,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\templatetags\static.py", line 171, in do_static
+    return StaticNode.handle_token(parser, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\templatetags\static.py", line 145, in handle_token
+    path = parser.compile_filter(bits[1])
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '/car.png' from 'images/car.png'
+2024-09-26 18:15:42,492 INFO Random Cat Fact - 2024-09-26 18:15:42.475858 is saved.
+2024-09-26 18:16:10,965 INFO Random Cat Fact - 2024-09-26 18:16:10.948372 is saved.
+2024-09-26 18:16:11,989 WARNING Not Found: /favicon.ico
+2024-09-26 18:17:23,114 INFO Random Cat Fact - 2024-09-26 18:17:23.098806 is saved.
+2024-09-26 18:17:45,890 INFO Random Cat Fact - 2024-09-26 18:17:45.876448 is saved.
+2024-09-26 18:18:11,608 INFO Random Cat Fact - 2024-09-26 18:18:11.590801 is saved.
+2024-09-26 18:18:25,001 INFO Random Cat Fact - 2024-09-26 18:18:24.986312 is saved.
+2024-09-26 18:19:06,904 INFO Random Cat Fact - 2024-09-26 18:19:06.889572 is saved.
+2024-09-26 18:19:29,547 INFO Random Cat Fact - 2024-09-26 18:19:29.534161 is saved.
+2024-09-26 18:20:16,775 INFO Random Cat Fact - 2024-09-26 18:20:16.760818 is saved.
+2024-09-26 18:20:37,760 INFO Random Cat Fact - 2024-09-26 18:20:37.751971 is saved.
+2024-09-26 18:22:36,921 INFO Random Cat Fact - 2024-09-26 18:22:36.904134 is saved.
+2024-09-26 18:23:15,225 INFO Random Cat Fact - 2024-09-26 18:23:15.214944 is saved.
+2024-09-26 18:23:34,352 INFO Random Cat Fact - 2024-09-26 18:23:34.335305 is saved.
+2024-09-26 18:24:56,950 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\settings.py changed, reloading.
+2024-09-26 18:25:04,216 INFO Random Cat Fact - 2024-09-26 18:25:04.202789 is saved.
+2024-09-26 18:26:13,972 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\settings.py changed, reloading.
+2024-09-26 18:26:19,244 INFO Random Cat Fact - 2024-09-26 18:26:19.235962 is saved.
+2024-09-26 18:29:00,540 INFO Random Cat Fact - 2024-09-26 18:29:00.524762 is saved.
+2024-09-26 18:30:48,962 INFO Random Cat Fact - 2024-09-26 18:30:48.948703 is saved.
+2024-09-26 18:31:06,008 INFO Random Cat Fact - 2024-09-26 18:31:05.993623 is saved.
+2024-09-26 18:31:27,135 INFO Random Cat Fact - 2024-09-26 18:31:27.121203 is saved.
+2024-09-26 18:31:50,683 INFO Random Cat Fact - 2024-09-26 18:31:50.668081 is saved.
+2024-09-26 18:38:00,784 INFO Random Cat Fact - 2024-09-26 18:38:00.777947 is saved.
+2024-09-26 18:38:20,280 INFO Random Cat Fact - 2024-09-26 18:38:20.265102 is saved.
+2024-09-26 18:40:44,472 INFO Random Cat Fact - 2024-09-26 18:40:44.456234 is saved.
+2024-09-26 18:41:28,303 WARNING Not Found: /favicon.ico

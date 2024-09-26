@@ -156,10 +156,10 @@ class Article(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
 
-class PartnerCompany(models.Model):
+class CompaniesPartners(models.Model):
+    logo = models.CharField(max_length=500, default='')
+    web = models.URLField(max_length=200)
     name = models.CharField(max_length=100)
-    logo_url = models.CharField(max_length=500, default='')
-    website = models.URLField(max_length=200)
 
 
 class CompanyInfo(models.Model):

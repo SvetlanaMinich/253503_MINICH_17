@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO, filename="my_log.log",filemode="a",forma
 
 
 def main(request):
-    partners = PartnerCompany.objects.all()
+    # partners = PartnerCompany.objects.all()
     services = Service.objects.all()
     
     url = "https://catfact.ninja/fact"
@@ -55,8 +55,7 @@ def main(request):
         services = services.filter(price__lte=price_to)
     return render(request, "main.html", {"services" : Service.objects.all(), "article" : article,
                                          "user_now": datetime.datetime.now().strftime('%d/%m/%Y %H:%M:%S'),
-                                         "utc_now": utc_now.strftime('%d/%m/%Y %H:%M:%S'),
-                                         "partners" : partners})
+                                         "utc_now": utc_now.strftime('%d/%m/%Y %H:%M:%S')})
 
 
 def statisticsv(request):

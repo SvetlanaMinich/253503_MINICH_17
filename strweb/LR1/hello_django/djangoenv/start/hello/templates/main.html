@@ -67,7 +67,7 @@
 {% else %}
 <p>Список услуг пока пуст.</p>
 {% endif %}
-{% if partners %}
+{% comment %} {% if partners %}
 <div class="partners">
 <h2>Наши партнёры</h2>
     <div id="partners-list">
@@ -78,6 +78,6 @@
         {% endfor %}
     </div>
 </div>
-{% endif %}
+{% endif %} {% endcomment %}
 {% endblock content %}
 

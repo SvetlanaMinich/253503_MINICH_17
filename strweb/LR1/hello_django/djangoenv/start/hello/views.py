@@ -20,8 +20,8 @@ logging.basicConfig(level=logging.INFO, filename="my_log.log",filemode="a",forma
 # python manage.py migrate
 
 
-def main(request):
-    # partners = PartnerCompany.objects.all()
+def main(request, client_id:int = None):
+    partners = CompaniesPartners.objects.all()
     services = Service.objects.all()
     
     url = "https://catfact.ninja/fact"
@@ -55,7 +55,9 @@ def main(request):
         services = services.filter(price__lte=price_to)
     return render(request, "main.html", {"services" : Service.objects.all(), "article" : article,
                                          "user_now": datetime.datetime.now().strftime('%d/%m/%Y %H:%M:%S'),
-                                         "utc_now": utc_now.strftime('%d/%m/%Y %H:%M:%S')})
+                                         "utc_now": utc_now.strftime('%d/%m/%Y %H:%M:%S'),
+                                         "partners": partners,
+                                         "client_id": client_id})
 
 
 def statisticsv(request):
@@ -137,9 +139,11 @@ def qa(request):
     qas = QA.objects.all()
     return render(request, "qa.html", {"qas" : qas})
 
-def reviews(request):
-    if request.method == "POST":
+def reviews(request, client_id:int = None):
+    if request.method == "POST" and not client_id:
         return render(request, "register.html", {'specializations' : Specialization.objects.all()})
+    elif request.method == "POST" and client_id:
+        return render(request,"createreview.html", {"client_id": client_id})
     return render(request, "reviews.html", {"reviews" : Review.objects.order_by("date").reverse()})
 
 def vacancies(request):
@@ -327,17 +331,6 @@ def editclient(request, client_id):
     else:
         return render(request, "editclient.html", {"client": client, "car_models" : CarModel.objects.all(), "car_types" : CarType.objects.all()})
     
-
-
-# class CartItem(models.Model):
-#     user = models.ForeignKey(Client, on_delete=models.CASCADE)
-#     master = models.ForeignKey(Master, on_delete=models.CASCADE, null=True)
-#     service = models.ForeignKey(Service, on_delete=models.CASCADE, null=True)
-#     part = models.ForeignKey(Part, on_delete=models.CASCADE, null=True)
-#     quantity = models.PositiveIntegerField(default=1)
-
-#     def total_price(self):
-#         return self.service.price * self.quantity
     
 def createorder(request, client_id):
     client = Client.objects.get(id = client_id)

@@ -15,10 +15,12 @@
 {% endblock header %}
 
 {% block content %}
-<nav> 
-    <a href="/login">Войти</a> 
-    <a href="/register">Зарегистрироваться</a> 
-</nav>
+{% if client_id is None %}
+    <nav> 
+        <a href="/login">Войти</a> 
+        <a href="/register">Зарегистрироваться</a> 
+    </nav>
+{% endif %}
 <div>
     <img src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-car-repair-logo-in-line-art-style-with-gears-png-image_5821463.png" 
     alt="logo"
@@ -67,17 +69,26 @@
 {% else %}
 <p>Список услуг пока пуст.</p>
 {% endif %}
-{% comment %} {% if partners %}
+{% if partners %}
 <div class="partners">
 <h2>Наши партнёры</h2>
-    <div id="partners-list">
-        {% for partner in partners %}
-            <a href="{{ partner.website }}">
-                <img src="{{ partner.logo_url }}" alt="{{ partner.name }}" title="{{ partner.name }}" width="100">
-            </a><br>
-        {% endfor %}
-    </div>
+    <table id="partners-list" border="0.3">
+        <thead>
+            <tr>
+                <th id="Logo">Логотип</th>
+                <th id="Site">Сайт</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for partner in partners %}
+            <tr>
+                <td header="Logo"><img src="{{ partner.logo }}" alt="{{ partner.name }}" width="60"></td>
+                <td header="Site"><h2><a href="{{ partner.web }}" target="_blank">{{ partner.name }}</a></h2></td>
+            </tr>    
+            {% endfor %}
+        </tbody>
+    </table>
 </div>
-{% endif %} {% endcomment %}
+{% endif %}
 {% endblock content %}
 

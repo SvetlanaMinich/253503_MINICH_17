@@ -32,12 +32,19 @@
 <input type="email" id="email" name="email" required><br><br>
 <input type="number" id="age" name="age" min="18" max="100" required><br><br>
 
-<iframe src="https://www.markformelle.by" height="200" width="300" title="Iframe Example"></iframe><br>
+<iframe src="https://www.markformelle.by" height="600" width="600" title="Iframe Example"></iframe><br>
 
 <audio controls>
     <source src="/static/output.mp3" type="audio/mpeg">
     Ваш браузер не поддерживает аудио.
 </audio><br>
+
+
+<listing>
+    def str_length(msg:str) -> int:
+        print(f'len({msg}) = {len(msg)}')
+        return len(msg)
+</listing>
 
 <a href="#anchor">Перейти к Якорю</a>
 {% endblock content %}

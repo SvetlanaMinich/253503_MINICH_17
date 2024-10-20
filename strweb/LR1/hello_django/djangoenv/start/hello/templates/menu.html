@@ -2,15 +2,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"
-    <meta name="description" content="Автосервис в Минске">>
+    <meta charset="UTF-8">
+    <meta name="description" content="Автосервис в Минске">
     <meta name="keywords" content="услуги, запчасти, автосервис">
-    <title>{% block title %}Default title{% endblock title %}</title>
-    <link rel="icon" href="/static/images/car_new.png" type="image/png" >
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="shortcut icon" href="/static/images/car_new.png">
 </head>
 <body>
-    <h1>{% block header %}
-        {% endblock header %}</h1>
+    <header>{% block header %}{% endblock header %}</header>
+    <nav>
         <h2>Навигация</h2>
         <ul>
             <li><a href="/">Главная</a></li>
@@ -26,7 +26,7 @@
             <li><a href="/statistics">Статистика</a></li>
             <li><a href="/requirements">Дополнительно</a></li>
         </ul>
-    
-    <div>{% block content%}{% endblock content %}</div>
+    </nav>
+    <main>{% block content%}{% endblock content %}</main>
 </body>
 </html>

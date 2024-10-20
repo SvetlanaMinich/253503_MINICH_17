@@ -16,14 +16,14 @@
             {% for item in cart_items %}
             <tr>
                 {% if item.service %}
-                    <td header="Service">{{ item.service.name }}</td>
-                    <td header="Part" colspan="2"></td>
-                    <td header="PPE">{{ item.service.price }}</td>
-                    <td header="TotalP">{{ item.total_price }}</td>
+                    <td headers="Service">{{ item.service.name }}</td>
+                    <td headers="Part" colspan="2"></td>
+                    <td headers="PPE">{{ item.service.price }}</td>
+                    <td headers="TotalP">{{ item.total_price }}</td>
                 {%else%}
-                    <td header="Service"></td>
-                    <td header="Part">{{ item.part.name }}</td>
-                    <td header="Quantity"><form method="post">
+                    <td headers="Service"></td>
+                    <td headers="Part">{{ item.part.name }}</td>
+                    <td headers="Quantity"><form method="post">
                         {% csrf_token %}
                             <input type="hidden" name="item_id" value="{{ item.id }}">
                             <button type="submit" name="decrease_quantity">-</button>

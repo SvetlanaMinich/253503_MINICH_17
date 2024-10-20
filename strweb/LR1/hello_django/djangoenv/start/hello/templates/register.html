@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Регистрация</title>
-</head>
-<body>
+{% extends "menu.html" %}
+{% load static %}
+{% block title %}Регистрация{% endblock title %}
+{% block link %}<link rel="stylesheet" href="{% static 'css/register.css' %}">{%endblock link%}
+
+{% block content %}
     <h1>Регистрация</h1>
     <form method="POST">
         {% csrf_token %}
@@ -20,8 +19,10 @@
             <tr>
                 <td>Тип пользователя:</td>
                 <td>
-                    <label><input type="radio" name="user_type" value="master"> Мастер</label>
-                    <label><input type="radio" name="user_type" value="client"> Клиент</label>
+                    <label><input type="radio" name="user_type" value="master" enabled> Мастер</label>
+                    <label><input type="radio" name="user_type" value="client" enabled> Клиент</label>
+                    <label><input type="radio" name="user_type" value="nobody" disabled> Никто</label>
+                    <label><input type="checkbox"> Флажок</label>
                 </td>
             </tr>
             <tr>
@@ -30,7 +31,7 @@
             </tr>
             <tr>
                 <td>Дата рождения:</td>
-                <td><input type="date" name="date_of_birth" required min="2006-01-01"></td>
+                <td><input type="date" name="date_of_birth" required max="2006-01-01"></td>
             </tr>
             <tr>
                 <td>Номер телефона:</td>
@@ -48,5 +49,4 @@
         <input type="submit" value="Зарегистрироваться"> 
     </form>
     <a href="/login">Уже есть аккаунт</a>
-</body>
-</html>
+{% endblock content %}

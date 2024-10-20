@@ -1,0 +1,20 @@
+h2 {
+    color: lightgray;
+    background-color: black;
+    height: max-content;
+    width: max-content;
+    font-variant: small-caps;
+}
+img[alt="Сертификат компании"] {
+    border: 1px solid darkblue;
+}
+.about-company-main img{
+    height: 100px;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: auto;
+}
+.about-company-main p {
+    text-size-adjust: 20px;
+}

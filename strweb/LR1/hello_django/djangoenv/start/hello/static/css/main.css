@@ -1,0 +1,65 @@
+/* table.services-list tbody tr:first-child {
+    background-color: pink;
+}
+table.services-list tbody tr:last-child {
+    background-color: rgb(247, 145, 161);
+}
+table.services-list tbody tr:nth-child(even) {
+    text-indent: 5px;
+} */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.service-item {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+}
+
+.partners-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.partner-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+}
+
+.partner-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 2px;
+}
+
+.partner-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+h1 {
+    text-align: center;
+}
+
+.company-name {
+    font-family: "Audiowide", Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-kerning: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}

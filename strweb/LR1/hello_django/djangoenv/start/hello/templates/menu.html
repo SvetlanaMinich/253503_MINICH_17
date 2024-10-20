@@ -6,25 +6,27 @@
     <meta name="description" content="Автосервис в Минске">
     <meta name="keywords" content="услуги, запчасти, автосервис">
     <title>{% block title %}{% endblock title %}</title>
-    <link rel="shortcut icon" href="/static/images/car_new.png">
+    {%block link %}{% endblock link %}
+    <link rel="stylesheet" href={% static 'css/menu.css' %}>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="shortcut icon" href={% static "mages/car_new.png" %}>
 </head>
 <body>
-    <header>{% block header %}{% endblock header %}</header>
-    <nav>
-        <h2>Навигация</h2>
+    <h1>{% block header %}{% endblock header %}</h1>
+    <nav class="menu-nav">
         <ul>
-            <li><a href="/">Главная</a></li>
-            <li><a href="/about_company">О компании</a></li>
-            <li><a href="/news">Новости</a></li>
-            <li><a href="/qa">Вопросы-ответы</a></li>
-            <li><a href="/contacts">Контакты</a></li>
-            <li><a href="/politics">Политика конфиденциальности</a></li>
-            <li><a href="/admin">Админ</a></li>
-            <li><a href="/vacancies">Вакансии</a></li>
-            <li><a href="/reviews">Отзывы</a></li>
-            <li><a href="/promocodes">Промокоды и купоны</a></li>
-            <li><a href="/statistics">Статистика</a></li>
-            <li><a href="/requirements">Дополнительно</a></li>
+            <li><a href="/" class="{% if request.path == '/' %}active{% endif %}">Главная</a></li>
+            <li><a href="/about_company" class="{% if request.path == '/about_company/' %}active{% endif %}">О компании</a></li>
+            <li><a href="/news" class="{% if request.path == '/news/' %}active{% endif %}">Новости</a></li>
+            <li><a href="/qa" class="{% if request.path == '/qa/' %}active{% endif %}">Вопросы-ответы</a></li>
+            <li><a href="/contacts" class="{% if request.path == '/contacts/' %}active{% endif %}">Контакты</a></li>
+            <li><a href="/politics" class="{% if request.path == '/politics/' %}active{% endif %}">Политика конфиденциальности</a></li>
+            <li><a href="/admin" class="{% if request.path == '/admin/' %}active{% endif %}">Админ</a></li>
+            <li><a href="/vacancies" class="{% if request.path == '/vacancies/' %}active{% endif %}">Вакансии</a></li>
+            <li><a href="/reviews" class="{% if request.path == '/reviews/' %}active{% endif %}">Отзывы</a></li>
+            <li><a href="/promocodes" class="{% if request.path == '/promocodes/' %}active{% endif %}">Промокоды и купоны</a></li>
+            <li><a href="/statistics" class="{% if request.path == '/statistics/' %}active{% endif %}">Статистика</a></li>
+            <li><a href="/requirements" class="{% if request.path == '/requirements/' %}active{% endif %}">Дополнительно</a></li>
         </ul>
     </nav>
     <main>{% block content%}{% endblock content %}</main>

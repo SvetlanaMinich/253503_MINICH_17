@@ -1,6 +1,8 @@
 {% extends "menu.html" %}
+{% load static %}
 {% block title %}Отзывы{% endblock title %}
 {% block header %}Отзывы{% endblock header %}
+{% block link %}<link rel="stylesheet" href="{% static 'css/reviews.css' %}">{% endblock link %}
 
 {% block content %}
 <a href="/register">Оставить отзыв</a><br>
@@ -8,7 +10,8 @@
     {% for review in reviews %}
     <div>
         <h3>{{ review.user.name }}</h3>
-        <p>{{ review.text }}</p>
+        <q lang="en">{{ review.text }}</q>
+        <q lang="ru">{{ review.text }}</q>
         <p>Рейтинг: {{ review.rating }} из 5</p>
         <p>Дата: {{ review.date }}</p>
     </div><br>

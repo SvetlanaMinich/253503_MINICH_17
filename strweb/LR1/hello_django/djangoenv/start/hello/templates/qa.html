@@ -1,13 +1,19 @@
 {% extends "menu.html" %}
+{% load static %}
 {% block title %}Вопрос-ответ{% endblock title %}
+{% block link %}<link rel="stylesheet" href="{% static 'css/qa.css' %}">{% endblock link %}
 {% block header %}Вопросы-ответы{% endblock header %}
 
 {% block content %}
 {% for qa in qas %}
 <details>
     <summary><strong>{{ qa.question }}</strong></summary>
-    <p>{{ qa.answer }}</p>
-    <p>Дата: {{ qa.date }}</p>
+    <p class="details">{{ qa.answer }}</p>
+    <div>
+        <p class="details date">
+            Дата: {{ qa.date }}
+        </p>
+    </div>
 </details>
 <hr>
 {% endfor %}

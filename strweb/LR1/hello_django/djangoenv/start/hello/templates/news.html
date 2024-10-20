@@ -1,5 +1,7 @@
 {% extends "menu.html" %}
+{% load static %}
 {% block title %}Новости{% endblock title %}
+{% block link %}<link rel="stylesheet" href="{% static 'css/news.css' %}">{% endblock link %}
 {% block header %}Новости{% endblock header %}
 
 {% block content %}
@@ -13,7 +15,7 @@
             </td>
             <td>
                 <!-- Заголовок статьи -->
-                <h2>{{ article.title }}</h2>
+                <h2 class="article-name">{{ article.title}}</h2>
                 
                 <!-- Краткое содержание статьи (одно предложение) -->
                 <p>{{ article.text|truncatewords:20 }}</p>

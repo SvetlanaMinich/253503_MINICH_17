@@ -1,26 +1,25 @@
 {% extends "menu.html" %}
+{% load static %}
 {% block title %}О компании{% endblock title %}
-{% block header %}О компании{% endblock header %}
+{% block link %}<link rel="stylesheet" href="{% static 'css/about_company.css' %}">{%endblock link%}
 
 {% block content %}
-    <div class="about_company_main">
+    <div class="about-company-main">
         <table>
             <tr>
-                <!-- Логотип компании -->
                 <td>
                     <img src="{{ company.logo_url }}" alt="Логотип компании">
                 </td>
                 
-                <!-- Описание компании -->
                 <td>
-                    {{ company.description }}
+                    <p>{{ company.description }}</p>
                 </td>
             </tr>
         </table>
     </div>
 
-    <video width="400" autoplay>
-        <source src="/static/videos/carvideo.mp4" type="video/mp4">
+    <video autoplay loop>
+        <source src={%static 'videos/carvideo.mp4'%} type="video/mp4">
         Ваш браузер не поддерживает видео.
     </video> <br>
 
@@ -34,5 +33,5 @@
 
     <!-- Сертификат компании (пока просто текст) -->
     <h2>Сертификат</h2>
-    <img src="{{ company.certificate }}" alt="Сертификат компании">
+    <img class="certificate-img" src="{{ company.certificate }}" alt="Сертификат компании">
 {% endblock content %}

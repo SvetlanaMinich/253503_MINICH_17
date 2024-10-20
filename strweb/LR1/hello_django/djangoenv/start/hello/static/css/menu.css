@@ -1,0 +1,82 @@
+.menu-nav a:link {
+    color:black;
+    font-size: 10px;
+    text-decoration: underline;
+}
+.menu-nav a:visited {
+    color:blueviolet;
+    font-size: 10px;
+    text-decoration: underline solid blueviolet;
+}
+.menu-nav a:hover {
+    color: blue;
+    font-size: 12px;
+}
+.menu-nav a:active {
+    color: brown;
+}
+.menu-nav a:focus {
+    color: brown;
+    font-size: 14px;
+}
+.menu-nav a.active:visited{
+    color: brown;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menu-nav ul {
+    list-style-type: none;
+}
+
+.menu-nav li a::before {
+    content: '☑';
+    color: black;
+    margin-right: 5px;
+}
+
+.menu-nav ul li:first-child {
+    background-color: pink;
+}
+.menu-nav ul li:last-child {
+    background-color: lightpink;
+}
+.menu-nav li:nth-child(odd) {
+    text-indent: 5px;
+}
+
+body {
+    font-family: "Audiowide", Arial, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    background-color: rgb(255, 246, 254);
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media (max-height: 300px) {
+    body {
+        background-color: rgb(253, 244, 255);
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    margin: 20px; 
+    text-transform: lowercase;
+    line-height: 2;
+    position: relative;
+}

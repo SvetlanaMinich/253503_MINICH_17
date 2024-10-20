@@ -1,0 +1,21 @@
+input:required {
+    color: blue;
+}
+label:has(input:disabled) {
+    text-decoration: line-through;
+}
+label:has(input:enabled) {
+    color: brown;
+}
+
+input[type='date']:out-of-range {
+    color: red;
+    font-size: 14px;
+}
+
+label:has(input[type='radio']:checked) {
+    font-weight: bold;
+}
+label:has(input[type='checkbox']:checked) {
+    font-size: 20px;
+}

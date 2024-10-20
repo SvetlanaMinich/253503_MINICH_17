@@ -1,6 +1,9 @@
 {% extends "menu.html" %}
+{% load static %}
 {% block title %}Главная страница{% endblock title %}
+{%block link %}<link rel="stylesheet" href="{% static 'css/main.css' %}">{% endblock link %}
 {% block header %}
+<p class="company-name">Автосервис МИНСКА</p>
 <div class='banner'>
     <img src='https://t4.ftcdn.net/jpg/04/60/44/41/360_F_460444183_vSecqcHBvOvXleTRx1Po500hC3pvB0Ul.jpg'
     width='850'
@@ -48,46 +51,31 @@
     <button type="submit">Применить фильтр</button>
 </form><br>
 {% if services %}
-<table>
-    <thead>
-        <tr>
-            <th>Название услуги</th>
-            <th>Цена</th>
-            <th>Тип услуги</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for service in services %}
-        <tr>
-            <td><a href="/service_info_not/{{ service.id }}">{{ service.name }}</a></td>
-            <td>{{ service.price }}</td>
-            <td>{{ service.type.name }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+<div class="services-grid">
+    {% for service in services %}
+    <div class="service-item">
+        <h3><a href="/service_info_not/{{ service.id }}">{{ service.name }}</a></h3>
+        <p>Цена: {{ service.price }}</p>
+        <p>Тип услуги: {{ service.type.name }}</p>
+    </div>
+    {% endfor %}
+</div>
 {% else %}
 <p>Список услуг пока пуст.</p>
 {% endif %}
 {% if partners %}
-<div class="partners">
-<h2>Наши партнёры</h2>
-    <table id="partners-list" border="0.3">
-        <thead>
-            <tr>
-                <th id="Logo">Логотип</th>
-                <th id="Site">Сайт</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for partner in partners %}
-            <tr>
-                <td header="Logo"><img src="{{ partner.logo }}" alt="{{ partner.name }}" width="60"></td>
-                <td header="Site"><h2><a href="{{ partner.web }}" target="_blank">{{ partner.name }}</a></h2></td>
-            </tr>    
-            {% endfor %}
-        </tbody>
-    </table>
+<h1>Наши партнеры</h1>
+<div class="partners-list">
+    {% for partner in partners %}
+    <div class="partner-item">
+        <div class="partner-logo">
+            <img src="{{ partner.logo }}" alt="{{ partner.name }}">
+        </div>
+        <div class="partner-info">
+            <h3><a href="{{ partner.web }}" target="_blank">{{ partner.name }}</a></h3>
+        </div>
+    </div>
+    {% endfor %}
 </div>
 {% endif %}
 {% endblock content %}

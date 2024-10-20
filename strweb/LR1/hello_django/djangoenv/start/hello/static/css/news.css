@@ -1,0 +1,29 @@
+button[type$='mit'] {
+    background-color: black;
+    color: lightgray;
+    font-size: 16px;
+    padding: 10px 24px;
+    transition-duration: 0.4s;
+}
+button:hover[type^='sub'] {
+    background-color: lightgray;
+    color: black;
+}
+p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: darkgreen;
+}
+h2.article-name::before {
+    content: "Название: ";
+    color: gray;
+}
+p::after {
+    content: " — Продолжение следует.";
+    color: gray;
+}
+
+h2::selection {
+    background-color: black;
+    color: lightgray;
+}

@@ -2408,3 +2408,456 @@ django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '
 2024-09-27 17:47:15,850 INFO Random Cat Fact - 2024-09-27 17:47:15.835840 is saved.
 2024-09-27 17:47:38,836 INFO Random Cat Fact - 2024-09-27 17:47:38.811759 is saved.
 2024-09-27 17:50:32,146 INFO Random Cat Fact - 2024-09-27 17:50:32.133378 is saved.
+2024-10-20 13:40:59,051 INFO Random Cat Fact - 2024-10-20 13:40:59.045351 is saved.
+2024-10-20 13:41:02,103 ERROR Internal Server Error: /about_company/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 107, in about_company
+    return render(request, "about_company.html", {'company': company_info})
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 511, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 528, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends "menu.html"> must be the first tag in the template.
+2024-10-20 13:41:02,233 WARNING Not Found: /favicon.ico
+2024-10-20 13:44:28,138 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\settings.py changed, reloading.
+2024-10-20 13:45:12,287 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\settings.py changed, reloading.
+2024-10-20 14:00:46,594 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\settings.py changed, reloading.
+2024-10-20 14:01:53,233 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\start\settings.py changed, reloading.
+2024-10-20 14:52:19,081 ERROR Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 122, in news
+    return render(request, "news.html", {"articles" : artcs})
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'static', expected 'endblock'. Did you forget to register or load this tag?
+2024-10-20 15:21:17,979 INFO Random Cat Fact - 2024-10-20 15:21:17.968148 is saved.
+2024-10-20 15:21:38,945 INFO Random Cat Fact - 2024-10-20 15:21:38.932901 is saved.
+2024-10-20 15:21:41,332 INFO Random Cat Fact - 2024-10-20 15:21:41.318401 is saved.
+2024-10-20 15:23:29,545 INFO Random Cat Fact - 2024-10-20 15:23:29.537091 is saved.
+2024-10-20 15:23:33,821 INFO Random Cat Fact - 2024-10-20 15:23:33.807512 is saved.
+2024-10-20 15:23:49,541 INFO Random Cat Fact - 2024-10-20 15:23:49.525201 is saved.
+2024-10-20 15:23:52,173 INFO Random Cat Fact - 2024-10-20 15:23:52.166891 is saved.
+2024-10-20 15:23:57,369 INFO Random Cat Fact - 2024-10-20 15:23:57.363346 is saved.
+2024-10-20 15:24:16,547 INFO Random Cat Fact - 2024-10-20 15:24:16.539498 is saved.
+2024-10-20 15:24:17,653 INFO Random Cat Fact - 2024-10-20 15:24:17.643163 is saved.
+2024-10-20 15:24:27,864 INFO Random Cat Fact - 2024-10-20 15:24:27.855838 is saved.
+2024-10-20 15:25:41,586 INFO Random Cat Fact - 2024-10-20 15:25:41.580629 is saved.
+2024-10-20 15:27:44,226 INFO Random Cat Fact - 2024-10-20 15:27:44.212383 is saved.
+2024-10-20 15:27:55,071 INFO Random Cat Fact - 2024-10-20 15:27:55.061381 is saved.
+2024-10-20 15:28:07,279 INFO Random Cat Fact - 2024-10-20 15:28:07.270169 is saved.
+2024-10-20 15:29:08,275 INFO Random Cat Fact - 2024-10-20 15:29:08.265412 is saved.
+2024-10-20 15:29:13,528 INFO Random Cat Fact - 2024-10-20 15:29:13.520309 is saved.
+2024-10-20 15:30:42,096 INFO Random Cat Fact - 2024-10-20 15:30:42.087535 is saved.
+2024-10-20 15:30:46,094 INFO Random Cat Fact - 2024-10-20 15:30:46.076857 is saved.
+2024-10-20 15:31:37,637 INFO Random Cat Fact - 2024-10-20 15:31:37.626212 is saved.
+2024-10-20 15:32:40,697 INFO Random Cat Fact - 2024-10-20 15:32:40.686652 is saved.
+2024-10-20 15:41:20,355 INFO Random Cat Fact - 2024-10-20 15:41:20.342237 is saved.
+2024-10-20 15:41:25,816 INFO Random Cat Fact - 2024-10-20 15:41:25.805803 is saved.
+2024-10-20 15:42:39,234 INFO Random Cat Fact - 2024-10-20 15:42:39.224167 is saved.
+2024-10-20 15:42:53,553 INFO Random Cat Fact - 2024-10-20 15:42:53.545633 is saved.
+2024-10-20 15:42:55,148 INFO Random Cat Fact - 2024-10-20 15:42:55.139919 is saved.
+2024-10-20 15:43:02,190 INFO Random Cat Fact - 2024-10-20 15:43:02.183189 is saved.
+2024-10-20 15:43:31,227 INFO Random Cat Fact - 2024-10-20 15:43:31.220077 is saved.
+2024-10-20 15:51:00,246 INFO Random Cat Fact - 2024-10-20 15:51:00.236653 is saved.
+2024-10-20 15:52:00,941 INFO Random Cat Fact - 2024-10-20 15:52:00.932016 is saved.
+2024-10-20 15:52:12,538 INFO Random Cat Fact - 2024-10-20 15:52:12.525446 is saved.
+2024-10-20 15:52:40,332 INFO Random Cat Fact - 2024-10-20 15:52:40.323233 is saved.
+2024-10-20 15:52:53,138 INFO Random Cat Fact - 2024-10-20 15:52:53.125986 is saved.
+2024-10-20 16:42:53,146 ERROR Internal Server Error: /reviews/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'translate'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 147, in reviews
+    return render(request, "reviews.html", {"reviews" : Review.objects.order_by("date").reverse()})
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'translate', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+2024-10-20 16:54:12,388 ERROR Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 122, in news
+    return render(request, "news.html", {"articles" : artcs})
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[:-26]' from 'article.title[:-26]'
+2024-10-20 16:56:22,628 ERROR Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 122, in news
+    return render(request, "news.html", {"articles" : artcs})
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[-26:]' from 'article.title[-26:]'
+2024-10-20 18:53:34,724 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\msys64\mingw64\lib\python3.10\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 616, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000002ec354adab0>: Failed to resolve 'catfact.ninja' ([Errno 11002] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\adapters.py", line 589, in send
+    resp = conn.urlopen(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='catfact.ninja', port=443): Max retries exceeded with url: /fact (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ec354adab0>: Failed to resolve 'catfact.ninja' ([Errno 11002] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 28, in main
+    response = requests.get(url).json()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\adapters.py", line 622, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='catfact.ninja', port=443): Max retries exceeded with url: /fact (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ec354adab0>: Failed to resolve 'catfact.ninja' ([Errno 11002] getaddrinfo failed)"))
+2024-10-20 18:53:43,413 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\msys64\mingw64\lib\python3.10\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 616, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000002ec35246e00>: Failed to resolve 'catfact.ninja' ([Errno 11002] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\adapters.py", line 589, in send
+    resp = conn.urlopen(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='catfact.ninja', port=443): Max retries exceeded with url: /fact (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ec35246e00>: Failed to resolve 'catfact.ninja' ([Errno 11002] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 28, in main
+    response = requests.get(url).json()
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\requests\adapters.py", line 622, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='catfact.ninja', port=443): Max retries exceeded with url: /fact (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ec35246e00>: Failed to resolve 'catfact.ninja' ([Errno 11002] getaddrinfo failed)"))
+2024-10-20 18:55:17,390 INFO Random Cat Fact - 2024-10-20 18:55:17.378371 is saved.
+2024-10-20 19:01:42,170 INFO Random Cat Fact - 2024-10-20 19:01:42.160423 is saved.
+2024-10-20 19:03:16,625 INFO Random Cat Fact - 2024-10-20 19:03:16.612073 is saved.
+2024-10-20 19:03:36,895 INFO Random Cat Fact - 2024-10-20 19:03:36.884030 is saved.
+2024-10-20 19:20:19,177 INFO Random Cat Fact - 2024-10-20 19:20:19.169447 is saved.
+2024-10-20 19:20:20,525 INFO Random Cat Fact - 2024-10-20 19:20:20.511042 is saved.
+2024-10-20 19:46:34,286 INFO Random Cat Fact - 2024-10-20 19:46:34.271693 is saved.
+2024-10-20 19:47:01,868 INFO Random Cat Fact - 2024-10-20 19:47:01.860307 is saved.
+2024-10-20 19:47:44,623 INFO Random Cat Fact - 2024-10-20 19:47:44.613686 is saved.
+2024-10-20 19:48:05,141 INFO Random Cat Fact - 2024-10-20 19:48:05.131611 is saved.
+2024-10-20 19:48:17,146 INFO Random Cat Fact - 2024-10-20 19:48:17.132459 is saved.
+2024-10-20 19:48:39,425 INFO Random Cat Fact - 2024-10-20 19:48:39.416087 is saved.
+2024-10-20 19:48:56,687 INFO Random Cat Fact - 2024-10-20 19:48:56.676282 is saved.
+2024-10-20 19:50:13,656 INFO Random Cat Fact - 2024-10-20 19:50:13.643423 is saved.
+2024-10-20 19:55:17,986 INFO Random Cat Fact - 2024-10-20 19:55:17.973548 is saved.
+2024-10-20 19:55:47,750 INFO Random Cat Fact - 2024-10-20 19:55:47.738090 is saved.
+2024-10-20 19:56:29,899 INFO Random Cat Fact - 2024-10-20 19:56:29.890404 is saved.
+2024-10-20 19:56:50,537 INFO Random Cat Fact - 2024-10-20 19:56:50.525211 is saved.
+2024-10-20 19:57:47,116 INFO Random Cat Fact - 2024-10-20 19:57:47.105230 is saved.
+2024-10-20 19:58:18,803 INFO Random Cat Fact - 2024-10-20 19:58:18.792661 is saved.
+2024-10-20 19:59:06,727 INFO Random Cat Fact - 2024-10-20 19:59:06.713152 is saved.
+2024-10-20 19:59:50,545 INFO Random Cat Fact - 2024-10-20 19:59:50.534101 is saved.
+2024-10-20 20:00:34,621 INFO Random Cat Fact - 2024-10-20 20:00:34.610207 is saved.
+2024-10-20 20:04:12,245 INFO Random Cat Fact - 2024-10-20 20:04:12.237130 is saved.
+2024-10-20 20:04:53,743 INFO Random Cat Fact - 2024-10-20 20:04:53.736337 is saved.
+2024-10-20 20:05:04,303 INFO Random Cat Fact - 2024-10-20 20:05:04.289582 is saved.
+2024-10-20 20:06:36,789 INFO Random Cat Fact - 2024-10-20 20:06:36.775490 is saved.

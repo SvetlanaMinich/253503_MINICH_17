@@ -14,7 +14,7 @@ p::first-letter {
     font-weight: bold;
     color: darkgreen;
 }
-h2.article-name::before {
+h2.article-title::before {
     content: "Название: ";
     color: gray;
 }
@@ -26,4 +26,34 @@ p::after {
 h2::selection {
     background-color: black;
     color: lightgray;
+}
+
+.articles-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+}
+
+.article-item {
+    border: 1px solid #f7b8f2;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fee7fa;
+    box-shadow: 0 4px 8px black;
+}
+
+.article-item img {
+    width: 200;
+    height: auto;
+    border-radius: 10px;
+}
+
+p.article-summary {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; 
+    font-size: 1em;
+    margin-bottom: 10px;
+    /* line-height: 1.6em;  */
+    max-height: calc(1.6em * 3);
 }

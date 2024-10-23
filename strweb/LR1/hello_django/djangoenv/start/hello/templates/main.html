@@ -24,7 +24,7 @@
         <a href="/register">Зарегистрироваться</a> 
     </nav>
 {% endif %}
-<div>
+<div class="logo-container">
     <img src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-car-repair-logo-in-line-art-style-with-gears-png-image_5821463.png" 
     alt="logo"
     width='50'
@@ -34,9 +34,11 @@
 <p>Текущая дата и время для Вашего часового пояса: {{ user_now }}</p>
 <p>Текущая дата и время в UTC: {{ utc_now }}</p>
 {% if article %} 
-<h3>{{ article.title }}</h3> 
-<p>{{ article.text }}</p> 
-<img src="{{ article.img_url }}" width="150" height="150"> 
+<div class="article-info">
+    <h3>{{ article.title }}</h3>
+    <p>{{ article.text }}</p>
+    <img src="{{ article.img_url }}">
+</div> 
 {% else %} 
 <p>Нет опубликованных статей.</p> 
 {% endif %}

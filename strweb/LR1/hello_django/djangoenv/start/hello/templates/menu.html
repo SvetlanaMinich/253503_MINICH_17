@@ -12,7 +12,6 @@
     <link rel="shortcut icon" href={% static "mages/car_new.png" %}>
 </head>
 <body>
-    <h1>{% block header %}{% endblock header %}</h1>
     <nav class="menu-nav">
         <ul>
             <li><a href="/" class="{% if request.path == '/' %}active{% endif %}">Главная</a></li>
@@ -29,6 +28,7 @@
             <li><a href="/requirements" class="{% if request.path == '/requirements/' %}active{% endif %}">Дополнительно</a></li>
         </ul>
     </nav>
+    <h1>{% block header %}{% endblock header %}</h1>
     <main>{% block content%}{% endblock content %}</main>
 </body>
 </html>

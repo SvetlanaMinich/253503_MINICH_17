@@ -1,16 +1,20 @@
 {% extends "menu.html" %}
+{% load static %}
 {% block title %}Вакансии{% endblock title %}
+{% block link %}<link rel="stylesheet" href="{% static 'css/vacancies.css' %}">{% endblock link %}
 {% block header %}Вакансии{% endblock header %}
 
 {% block content %}
 {% for job in jobs %}
-<div>
-    <h2>{{ job.title }}</h2>
-    <p>Зарплата: {{ job.salary }} руб.</p>
-    <p>{{ job.description }}</p>
+<div class="vacancy">
+    <h2 class="vacancy-title">{{ job.title }}</h2>
+    <div class="vacancy-description">
+        <p>Зарплата: {{ job.salary }} руб.</p>
+        <p>{{ job.description }}</p>
+    </div>
 </div>
 <hr>
 {% endfor %}
 
-<p>Для получения дополнительной информации и подачи заявки свяжитесь с нами.</p>
+<p class="additional-info">Для получения дополнительной информации и подачи заявки свяжитесь с нами.</p>
 {% endblock content %}

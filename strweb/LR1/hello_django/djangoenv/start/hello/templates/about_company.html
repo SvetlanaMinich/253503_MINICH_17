@@ -18,20 +18,28 @@
         </table>
     </div>
 
-    <video autoplay loop>
+    <video autoplay loop class='promo_video'>
         <source src={%static 'videos/carvideo.mp4'%} type="video/mp4">
         Ваш браузер не поддерживает видео.
     </video> <br>
 
-    <!-- История компании по годам -->
-    <h2>История компании</h2>
-    <p>{{ company.history|linebreaks }}</p> <!-- Используем фильтр, чтобы форматировать текст по строкам -->
+    <div class='company_history'>
+        <h2>История компании</h2>
+        <p>{{ company.history|linebreaks }}</p>
+    </div>
 
-    <!-- Реквизиты компании -->
-    <h2>Реквизиты</h2>
-    <p>{{ company.requisites|linebreaks }}</p> <!-- Аналогично форматируем реквизиты -->
+    <div class='company-requisites'>
+        <h2>Реквизиты</h2>
+        <p>{{ company.requisites|linebreaks }}</p>
+    </div>
 
     <!-- Сертификат компании (пока просто текст) -->
     <h2>Сертификат</h2>
-    <img class="certificate-img" src="{{ company.certificate }}" alt="Сертификат компании">
+    <div class="certificate-container">
+        <div class="certificate-text">
+            <h3>Сертификат качества</h3>
+            <p>Настоящим удостоверяется, что компания <strong>{{ company.name }}</strong> соответствует всем стандартам качества и успешно прошла сертификацию.</p>
+            <p>Дата выдачи: <strong>01.01.2024</strong></p>
+        </div>
+    </div>
 {% endblock content %}

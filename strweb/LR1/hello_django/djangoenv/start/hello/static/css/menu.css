@@ -45,6 +45,15 @@
     text-indent: 5px;
 }
 
+.menu-nav {
+    position: sticky;
+    top: 0;
+    width: 100%; 
+    background-color: rgb(255, 246, 254); 
+    box-shadow: 0 4px 2px -2px gray;
+    z-index: 1000;
+}
+
 body {
     font-family: "Audiowide", Arial, sans-serif;
     font-size: 14px;
@@ -78,5 +87,4 @@ p {
     margin: 20px; 
     text-transform: lowercase;
     line-height: 2;
-    position: relative;
 }

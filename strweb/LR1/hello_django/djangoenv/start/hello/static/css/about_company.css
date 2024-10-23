@@ -1,4 +1,4 @@
-h2 {
+/* h2 {
     color: lightgray;
     background-color: black;
     height: max-content;
@@ -7,7 +7,7 @@ h2 {
 }
 img[alt="Сертификат компании"] {
     border: 1px solid darkblue;
-}
+} */ 
 .about-company-main img{
     height: 100px;
     width: auto;
@@ -17,4 +17,65 @@ img[alt="Сертификат компании"] {
 }
 .about-company-main p {
     text-size-adjust: 20px;
+}
+
+.certificate-container {
+    position: relative; /* Для использования z-index */
+    height: 500px;
+    width: 300px;
+    padding: 20px;
+    /* background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(230, 230, 230, 0.9)); */
+    background-image: url("{% static 'images/certificate-bg.jpg' %}");
+    background-size: cover;
+    border: 20px solid transparent;
+    /* border-image: url('/path/to/your-border-image.png') 30 round; Графический файл для границ */
+    text-align: center;
+    font-family: "Georgia", serif;
+    font-size: 1.2em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.certificate-text {
+    z-index: 2; 
+    color: rgb(35, 35, 35);
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.certificate-text h3 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    font-variant: small-caps;
+    color: black;
+}
+
+.certificate-container {
+    border-image: -webkit-image-set(url('https://img.freepik.com/free-vector/vinatge-car-white-background_1308-25742.jpg') 30 round);
+    border-image: -moz-image-set(url('https://img.freepik.com/premium-vector/car-white-background_352279-23.jpg') 30 round);
+}
+
+.promo_video {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.company_history h2{
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px gray;
+}
+
+.company-requisites {
+    border-left: 5px solid #f75ccb;
+}
+.company-requisites h2 {
+    margin-left: 5px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px gray;
+}
+.company-requisites p{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
 }

@@ -1,8 +1,17 @@
 {% extends "menu.html" %}
+{% load static %}
+{% block link %}<link rel="stylesheet" href="{% static 'css/promocodes.css' %}">{% endblock link %}
 {% block title %}Промокоды{% endblock title %}
 {% block header %}Промокоды{% endblock header %}
 
 {% block content %}
+<div id="loader">
+	<div id="d1"></div>
+	<div id="d2"></div>
+	<div id="d3"></div>
+	<div id="d4"></div>
+	<div id="d5"></div>
+</div>
 <form method="POST">
     {% csrf_token %}
     <label>Поиск по названию:</label>
@@ -10,40 +19,66 @@
     <button type="submit">Найти</button>
 </form>
 {% if searched %}
-<table>
-    <thead> 
-        <tr> 
-            <th>Название</th> <th>Скидка</th>
-        </tr> 
-    </thead> 
-    <tbody> 
-        {% for p in searched %}
+<div class="table-container">
+    <div class="table-header">Результаты поиска промокодов</div>
+    <table>
+        <thead> 
             <tr> 
-                <td>{{ p.name }}</td> <td>{{ p.discount }}%</td>
+                <th>Название</th> 
+                <th>Скидка</th>
             </tr> 
-        {% endfor %}
-    </tbody> 
-</table>
+        </thead> 
+        <tbody> 
+            {% for p in searched %}
+                <tr> 
+                    <td>{{ p.name }}</td> 
+                    <td>{{ p.discount }}%</td>
+                </tr> 
+            {% endfor %}
+            <tr> 
+                <td>Example</td> 
+                <td></td>
+            </tr>
+        </tbody> 
+    </table>
+</div>
 {% else %}
 {% endif %}
 {% if proms %}
-<table> 
-    <thead> 
-        <tr> 
-            <th>Название</th> <th>Скидка</th>
-        </tr> 
-    </thead> 
-    <tbody> 
-        {% for pr in proms %} 
-        <tr> 
-            <td>{{ pr.name }}</td> <td>{{ pr.discount }}%</td>
-        </tr> 
-        {% endfor %} 
-    </tbody> 
-</table>
+<h2>Действующие промокоды</h2>
+<ul class="promo-list">
+    {% for pr in proms %}
+    <li class="promo-item">
+        <h3>{{ pr.name }}</h3>
+        <p>Скидка: <strong>{{ pr.discount }}%</strong></p>
+    </li>
+    {% endfor %}
+</ul>
 {% else %}
 <p>Действующих промокодов нет.</p>
 {% endif %}
+<p class="company-name">AvtoBel</p>
+<div class="car">
+    
+        <div class="car-body">
+          <div class="part-one">
+            <div class="drivmirror"></div>
+          </div>
+          
+          <div class="part-two">
+            <div class="lights">
+              <div class="light left"></div>
+              <div class="light right"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="wheels">
+          <div class="wheel left"></div>
+          <div class="wheel right"></div>
+        </div>
+        
+</div>
 {% endblock content %}
 
 

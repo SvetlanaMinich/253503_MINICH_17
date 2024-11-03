@@ -1,0 +1,49 @@
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 4em;
+    color: palevioletred;
+    margin-bottom: 15px;
+    margin-left: 70px;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 2px gray;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    font-family: Verdana, sans-serif;
+    font-size: 0.9em;
+    margin-right: 10px;
+    box-shadow: 2px 2px 5px;
+}
+
+textarea:focus {
+    border-color: blue;
+}
+
+select {
+    font-family: Tahoma, sans-serif;
+    font-size: 0.9em;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+select:focus {
+    border-color: blue;
+}
+
+button[type="submit"] {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    padding: 10px 20px;
+    color: palevioletred;
+    background-color: lightpink;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    color: lightpink;
+    background-color: palevioletred;
+}

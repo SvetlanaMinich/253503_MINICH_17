@@ -18,6 +18,7 @@
 {% endblock header %}
 
 {% block content %}
+
 {% if client_id is None %}
     <nav> 
         <a href="/login">Войти</a> 
@@ -30,6 +31,8 @@
     width='50'
     height='50'>
 </div>
+
+<div class="loader"></div>
 
 <p>Текущая дата и время для Вашего часового пояса: {{ user_now }}</p>
 <p>Текущая дата и время в UTC: {{ utc_now }}</p>

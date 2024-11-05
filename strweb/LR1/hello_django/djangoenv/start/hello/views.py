@@ -19,8 +19,13 @@ logging.basicConfig(level=logging.INFO, filename="my_log.log",filemode="a",forma
 # python manage.py makemigrations
 # python manage.py migrate
 
+in_acc = False
+in_acc_client_id = None
+in_acc_master_id = None
 
-def main(request, client_id:int = None):
+
+def main(request):
+    global in_acc, in_acc_master_id, in_acc_client_id
     partners = CompaniesPartners.objects.all()
     services = Service.objects.all()
     
@@ -57,7 +62,9 @@ def main(request, client_id:int = None):
                                          "user_now": datetime.datetime.now().strftime('%d/%m/%Y %H:%M:%S'),
                                          "utc_now": utc_now.strftime('%d/%m/%Y %H:%M:%S'),
                                          "partners": partners,
-                                         "client_id": client_id})
+                                         "client_id": in_acc_client_id,
+                                         "master_id": in_acc_master_id,
+                                         "in_acc": in_acc})
 
 
 def statisticsv(request):
@@ -139,11 +146,11 @@ def qa(request):
     qas = QA.objects.all()
     return render(request, "qa.html", {"qas" : qas})
 
-def reviews(request, client_id:int = None):
-    if request.method == "POST" and not client_id:
+def reviews(request):
+    if request.method == "POST" and not in_acc:
         return render(request, "register.html", {'specializations' : Specialization.objects.all()})
-    elif request.method == "POST" and client_id:
-        return render(request,"createreview.html", {"client_id": client_id})
+    elif request.method == "POST" and in_acc:
+        return render(request,"createreview.html", {"client_id": in_acc_client_id})
     return render(request, "reviews.html", {"reviews" : Review.objects.order_by("date").reverse()})
 
 def vacancies(request):
@@ -155,6 +162,7 @@ def requirements(request):
 
 
 def login(request):
+    global in_acc, in_acc_master_id, in_acc_client_id
     userform = UserForm()
     if request.method == "POST":
         userform = UserForm(request.POST)
@@ -168,6 +176,8 @@ def login(request):
                 if len(searched_masters) > 0:
                     searched_masters = searched_masters.filter(password = tpassword)
                     if len(searched_masters) == 1:
+                        in_acc = True
+                        in_acc_master_id = searched_masters[0].pk
                         logging.info(f"Master {searched_masters.first().master.name} added.")
                         return redirect(f'master/{searched_masters.first().master.pk}')
                     else:
@@ -181,6 +191,8 @@ def login(request):
                 if len(searched_clients) > 0:
                     searched_clients = searched_clients.filter(password = tpassword)
                     if len(searched_clients) == 1:
+                        in_acc = True
+                        client_id = searched_clients[0].pk
                         logging.info(f"Client {searched_clients.first().client.name} added.")
                         return redirect(f'client/{searched_clients.first().client.pk}')
                     else:
@@ -203,6 +215,7 @@ def CheckAge(age):
 
 
 def register(request):
+    global in_acc, in_acc_master_id, in_acc_client_id
     userform = UserForm()
     if request.method == "POST":
         userform = UserForm(request.POST)
@@ -235,6 +248,8 @@ def register(request):
                 new_master_cred.login = tlogin
                 new_master_cred.password = tpassword
                 new_master_cred.save()
+                in_acc = True
+                in_acc_master_id = new_master.pk
                 return redirect(f'master/{new_master.pk}')
             else:
                 if ClientCredentials.objects.filter(login = tlogin).exists():
@@ -252,6 +267,8 @@ def register(request):
                 new_cl_creds.login = tlogin
                 new_cl_creds.password = tpassword
                 new_cl_creds.save()
+                in_acc = True
+                in_acc_client_id = new_client.pk
                 return redirect(f'client/{new_client.pk}')
         else:
             return HttpResponse("Invalid data")
@@ -287,6 +304,11 @@ def service_info_registered(request, client_id, service_id):
 
 
 def mastersview(request, master_id):
+    global in_acc, in_acc_master_id, in_acc_client_id
+    if request.method == 'POST':
+        in_acc = False
+        in_acc_master_id = None
+        return redirect('/')
     mast = Master.objects.get(id = master_id)
     clients_id = ClientMaster.objects.filter(master = mast)
     clients = set(cm.client for cm in clients_id)
@@ -295,6 +317,11 @@ def mastersview(request, master_id):
                                            "clients" : clients})
 
 def clientsview(request, client_id):
+    global in_acc, in_acc_master_id, in_acc_client_id
+    if request.method == 'POST':
+        in_acc = False
+        in_acc_client_id = None
+        return redirect('/')
     client = Client.objects.get(id = client_id)
     return render(request, "client.html", {"client": client, 
                                            "client_id" : client_id, 

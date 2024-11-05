@@ -3817,3 +3817,132 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'st
 2024-11-03 18:34:40,134 INFO Random Cat Fact - 2024-11-03 18:34:40.122566 is saved.
 2024-11-03 18:36:40,506 INFO Random Cat Fact - 2024-11-03 18:36:40.499467 is saved.
 2024-11-03 18:38:17,325 INFO Random Cat Fact - 2024-11-03 18:38:17.314609 is saved.
+2024-11-05 21:39:01,966 INFO Random Cat Fact - 2024-11-05 21:39:01.958847 is saved.
+2024-11-05 21:39:59,506 INFO Random Cat Fact - 2024-11-05 21:39:59.494757 is saved.
+2024-11-05 21:41:48,896 INFO Random Cat Fact - 2024-11-05 21:41:48.885011 is saved.
+2024-11-05 21:47:36,286 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 21:48:00,742 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 21:48:11,463 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 21:48:18,180 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 21:49:39,102 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 21:49:44,766 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 21:50:10,973 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 21:50:24,926 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 21:50:45,926 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 21:50:51,614 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 21:50:57,190 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 21:51:34,803 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 21:52:40,036 WARNING Not Found: /favicon.ico
+2024-11-05 22:03:29,328 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:03:36,008 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:04:06,510 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:04:18,273 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:04:25,012 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:04:32,759 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:04:48,585 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:05:02,301 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:09:42,131 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:09:51,790 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:10:04,607 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:10:17,472 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:10:34,364 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:10:48,248 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:11:10,288 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:11:24,281 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:15:06,793 INFO Random Cat Fact - 2024-11-05 22:15:06.780621 is saved.
+2024-11-05 22:15:14,339 INFO Master imsve added.
+2024-11-05 22:15:19,299 INFO Random Cat Fact - 2024-11-05 22:15:19.289704 is saved.
+2024-11-05 22:15:57,894 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:16:06,601 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:16:14,294 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:16:21,071 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:16:28,554 INFO Random Cat Fact - 2024-11-05 22:16:28.543268 is saved.
+2024-11-05 22:16:32,629 INFO Master imsve added.
+2024-11-05 22:16:38,264 INFO Random Cat Fact - 2024-11-05 22:16:38.252010 is saved.
+2024-11-05 22:16:38,472 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 61, in main
+    return render(request, "main.html", {"services" : Service.objects.all(), "article" : article,
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'master_profile' not found. 'master_profile' is not a valid view function or pattern name.
+2024-11-05 22:17:03,743 INFO Random Cat Fact - 2024-11-05 22:17:03.735705 is saved.
+2024-11-05 22:17:11,036 ERROR Internal Server Error: /login/master/12
+Traceback (most recent call last):
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py", line 311, in mastersview
+    return redirect('main')
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\lib\python3.10\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'main' not found. 'main' is not a valid view function or pattern name.
+2024-11-05 22:17:45,189 INFO C:\253503_MINICH_17\strweb\LR1\hello_django\djangoenv\start\hello\views.py changed, reloading.
+2024-11-05 22:17:51,936 INFO Random Cat Fact - 2024-11-05 22:17:51.927210 is saved.
+2024-11-05 22:17:56,277 INFO Master imsve added.
+2024-11-05 22:18:00,048 INFO Random Cat Fact - 2024-11-05 22:18:00.037863 is saved.

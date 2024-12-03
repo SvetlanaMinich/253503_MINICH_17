@@ -1,0 +1,11 @@
+{% extends "menu.html" %}
+{% load static %}
+{% block title %}Задание 3{% endblock title %}
+{% block header %}Задание 3{% endblock header %}
+{% block link %}<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>{% endblock link %}
+
+{% block content %}
+    <canvas id="myChart" width="800" height="400"></canvas>
+    <button id="saveChart">Сохранить график</button>
+    <script src="{% static 'js/task3.js' %}"></script>
+{% endblock content %}

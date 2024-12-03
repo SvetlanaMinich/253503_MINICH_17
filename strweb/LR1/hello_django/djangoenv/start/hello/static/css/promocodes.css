@@ -66,34 +66,6 @@ tbody td:empty {
 }
 
 
-
-#loader {
-    width: 100px;
-    height: 40px;
-    position: relative;
-    margin: auto; 
-}
-#loader div {
-    width: 20px;
-    height: 20px;
-    background: palevioletred;
-    border-radius: 50%;
-    position: absolute; 
-}
-#d1 { animation: animate 2s linear infinite;}
-#d2 { animation: animate 2s linear infinite -.4s; }
-#d3 {animation: animate 2s linear infinite -.8s; }
-#d4 { animation: animate 2s linear infinite -1.2s; } 
-#d5 { animation: animate 2s linear infinite -1.6s; }
-@keyframes animate {
-    0% { left: 100px; top:0}
-    80% { left: 0; top:0;}
-    85% { left: 0; top: -20px;}
-    95% { left: 100px; top: -20px;}
-    100% { left: 100px; top:0; }
-}
-
-
 .car {
     position: relative;
     height: 300px;
@@ -248,6 +220,7 @@ tbody td:empty {
     color: black; /* Text color */
     opacity: 0; /* Start invisible */
     animation: fadeIn 3s forwards; /* Fade in effect */
+    animation-delay: 3s;
 }
 
 @keyframes fadeIn {

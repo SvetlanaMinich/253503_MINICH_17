@@ -11,6 +11,8 @@ from django.views import View
 from .forms import UserForm
 from .models import *
 import statistics
+import json
+from django.views.decorators.csrf import csrf_exempt
 
 logging.basicConfig(level=logging.INFO, filename="my_log.log",filemode="a",format="%(asctime)s %(levelname)s %(message)s")
 
@@ -27,7 +29,6 @@ in_acc_master_id = None
 def main(request):
     global in_acc, in_acc_master_id, in_acc_client_id
     partners = CompaniesPartners.objects.all()
-    services = Service.objects.all()
     
     url = "https://catfact.ninja/fact"
     response = requests.get(url).json()
@@ -51,14 +52,7 @@ def main(request):
     # Получение текущей даты для пользователя и UTC
     utc_now = datetime.datetime.now(tz=pytz.utc)
 
-    if request.method == "POST":
-        price_from = int(request.POST.get('price_from'))
-        price_to = int(request.POST.get('price_to'))
-        if price_from > price_to:
-            return HttpResponse("Filter is not correct.")
-        services = services.filter(price__gte=price_from)
-        services = services.filter(price__lte=price_to)
-    return render(request, "main.html", {"services" : Service.objects.all(), "article" : article,
+    return render(request, "main.html", {"article" : article,
                                          "user_now": datetime.datetime.now().strftime('%d/%m/%Y %H:%M:%S'),
                                          "utc_now": utc_now.strftime('%d/%m/%Y %H:%M:%S'),
                                          "partners": partners,
@@ -113,8 +107,82 @@ def about_company(request):
     company_info = CompanyInfo.objects.first()
     return render(request, "about_company.html", {'company': company_info})
 
+def task7_class(request):
+    return render(request, "task7_class.html")
+
+def task8_animation(request):
+    return render(request, "task8-animation.html")
+
+def task3(request):
+    return render(request, "task3.html")
+
+from django.core.serializers import serialize
+def services(request):
+    services = Service.objects.all()
+    if request.method == "POST":
+        price_from = int(request.POST.get('price_from'))
+        price_to = int(request.POST.get('price_to'))
+        if price_from > price_to:
+            return HttpResponse("Filter is not correct.")
+        services = services.filter(price__gte=price_from)
+        services = services.filter(price__lte=price_to)
+    services_json = serialize("json", services)
+    return render(request, "services.html", {"services" : services_json})
+
+from django.http import JsonResponse
+import math
+
+@csrf_exempt
 def contacts(request):
     return render(request, "contacts.html", {"masters" : Master.objects.all()})
+
+@csrf_exempt
+def contacts_api(request):
+    if request.method == "GET":
+        page = int(request.GET.get("page", 1))
+        page_size = int(request.GET.get("page_size", 3))
+
+        # Получаем всех мастеров
+        masters = Master.objects.all()
+        filtered_masters = masters[(page-1)*page_size: (page-1)*page_size + page_size]
+        # Подготавливаем данные
+        data = [
+            {
+                "name": master.name,
+                "img_url": master.img_url or "https://avatars.mds.yandex.net/.../default.jpg",
+                "age": master.age,
+                "phone_number": master.phone_number,
+                "specialization": master.specialization.name,
+                "order_count": master.order_count,
+            }
+            for master in filtered_masters ]
+        # Возвращаем данные
+        return JsonResponse({
+            "data": data,
+            "total_pages": math.ceil(len(masters)/page_size),
+            "current_page": page
+        }, safe=False)
+    
+    if request.method == "POST":
+        try:
+            body = json.loads(request.body)  # Получаем данные из POST-запроса
+            
+            specialization = Specialization.objects.first()
+            # if specialization is None:
+            #     return JsonResponse({"success": False, "message": str(e)})
+
+            # Создаем нового мастера
+            master = Master.objects.create(
+                name=body["name"],
+                img_url=body.get("img_url", "https://cdn-icons-png.flaticon.com/512/219/219983.png"),
+                age=body["age"],
+                phone_number=body["phone_number"],
+                specialization=specialization,
+                order_count=body.get("order_count", 0),
+            )
+            return JsonResponse({"success": True, "message": "Contact added successfully", "id": master.id})
+        except Exception as e:
+            return JsonResponse({"success": False, "message": str(e)})
 
 #сортировка
 def news(request):

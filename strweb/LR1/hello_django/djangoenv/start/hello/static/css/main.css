@@ -1,12 +1,3 @@
-/* table.services-list tbody tr:first-child {
-    background-color: pink;
-}
-table.services-list tbody tr:last-child {
-    background-color: rgb(247, 145, 161);
-}
-table.services-list tbody tr:nth-child(even) {
-    text-indent: 5px;
-} */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -95,4 +86,42 @@ h1 {
 
 .logo-container img:hover {
     transform: scale(1.5); 
+}
+
+
+.banner {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 300px;
+    overflow: hidden;
+}
+
+.controls, .pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pagination-dot {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#caption {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
 }

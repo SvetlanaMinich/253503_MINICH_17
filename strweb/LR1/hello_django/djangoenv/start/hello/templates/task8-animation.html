@@ -1,0 +1,22 @@
+{% extends "menu.html" %}
+{% load static %}
+{% block title %}Задание 8{% endblock title %}
+{% block header %}Задание 8{% endblock header %}
+{% block link %}<link rel="stylesheet" href="{% static 'css/animation.css' %}">{% endblock link %}
+
+{% block content %}
+
+    <div class="content">
+        <div class="image-container">
+            <img id="car" class="rotating-image" src="https://pngimg.com/d/porsche_PNG10622.png" alt="Автомобиль">
+        </div>
+        <div class="image-container">
+            <img id="tool1" class="rotating-image" src="https://static.vecteezy.com/system/resources/previews/009/391/117/non_2x/tool-clipart-design-illustration-free-png.png" alt="Автомобиль">
+        </div>
+        <div class="image-container">
+            <img id="tool2" class="rotating-image" src="https://static.vecteezy.com/system/resources/previews/024/952/067/non_2x/car-tools-equipment-and-accessories-set-of-automobile-accessory-spare-parts-car-3d-illustration-png.png" alt="Автомобиль">
+        </div>
+    </div>
+
+    <script src="{% static 'js/task8Scroll.js' %}"></script>
+{% endblock content %}

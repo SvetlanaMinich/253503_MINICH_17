@@ -12,9 +12,10 @@
     <link rel="shortcut icon" href={% static "mages/car_new.png" %}>
 </head>
 <body>
+    <div id="countdown">Обратный отсчёт: 00:00:50</div>
     <nav class="menu-nav">
         <ul>
-            <li><a href="/" class="{% if request.path == '/' %}active{% endif %}">Главная</a></li>
+            <li><a href="/" class="{% if request.path == '/' %}active{% endif %}"> //жвакинасосиГлавная</a></li>
             <li><a href="/about_company" class="{% if request.path == '/about_company/' %}active{% endif %}">О компании</a></li>
             <li><a href="/news" class="{% if request.path == '/news/' %}active{% endif %}">Новости</a></li>
             <li><a href="/qa" class="{% if request.path == '/qa/' %}active{% endif %}">Вопросы-ответы</a></li>
@@ -25,10 +26,15 @@
             <li><a href="/reviews" class="{% if request.path == '/reviews/' %}active{% endif %}">Отзывы</a></li>
             <li><a href="/promocodes" class="{% if request.path == '/promocodes/' %}active{% endif %}">Промокоды и купоны</a></li>
             <li><a href="/statistics" class="{% if request.path == '/statistics/' %}active{% endif %}">Статистика</a></li>
+            <li><a href="/services" class="{% if request.path == '/services/' %}active{% endif %}">Услуги</a></li>
             <li><a href="/requirements" class="{% if request.path == '/requirements/' %}active{% endif %}">Дополнительно</a></li>
+            <li><a href="/task7-class" class="{% if request.path == '/task7-class/' %}active{% endif %}">Задание 7 классы</a></li>
+            <li><a href="/task8-animation" class="{% if request.path == '/task8-animation/' %}active{% endif %}">Задание 8 анимация</a></li>
+            <li><a href="/task3" class="{% if request.path == '/task3/' %}active{% endif %}">Задание 3 график</a></li>
         </ul>
     </nav>
     <h1>{% block header %}{% endblock header %}</h1>
     <main>{% block content%}{% endblock content %}</main>
+    <script src="{% static 'js/timer.js' %}"></script>
 </body>
 </html>

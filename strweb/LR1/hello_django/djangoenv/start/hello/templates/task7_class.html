@@ -1,0 +1,26 @@
+{% extends "menu.html" %}
+{% load static %}
+{% block title %}Задание 7{% endblock title %}
+{% block header %}Задание 7{% endblock header %}
+
+{% block content %}
+<h1>Список подписчиков</h1>
+    
+    <!-- Форма для добавления подписчиков -->
+    <form id="subscriber-form">
+        <label for="name">Имя: </label><input type="text" id="name"><br>
+        <label for="address">Адрес: </label><input type="text" id="address"><br>
+        <label for="newspapers">Количество газет: </label><input type="number" id="newspapers"><br>
+        <label for="magazines">Количество журналов: </label><input type="number" id="magazines"><br>
+        <label for="pictures">Количество картинок: </label><input type="number" id="pictures"><br>
+        <button type="button" onclick="addSubscriberFromForm()">Добавить подписчика</button>
+    </form>
+
+    <div id="subscribers-output"></div>
+  
+    <h2>Фильтрация подписчиков (>= 3 газет и >= 2 журналов)</h2>
+    <div id="filtered-subscribers-output"></div>
+    <button type="button" onclick="filterSubscribers()">Показать подходящих</button>
+
+    <script src="{% static 'js/task7Class.js' %}"></script>
+{% endblock content %}

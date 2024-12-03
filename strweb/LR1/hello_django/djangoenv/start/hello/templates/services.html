@@ -1,0 +1,34 @@
+{% extends "menu.html" %}
+{% load static %}
+{% block title %}Услуги{% endblock title %}
+{% block header %}Предоставляемые услуги{% endblock header %}
+{% block link %}<link rel="stylesheet" href="{% static 'css/services.css' %}">{% endblock link %}
+
+{% block content %}
+<h2>Услуги</h2>
+    <form method="POST" id="filterForm">
+        <label>Стоимость от:</label>
+        <input type="number" name="price_from" id="price_from" required>
+        <label> до:</label>
+        <input type="number" name="price_to" id="price_to" required>
+        <button type="submit">Применить фильтр</button>
+    </form><br>
+
+    <div class="services-container">
+        <div class="services-grid" id="servicesGrid">
+            <!-- Карточки услуг будут добавлены через JavaScript -->
+        </div>
+
+        <div class="pagination" id="pagination">
+            <!-- Кнопки навигации добавляются динамически -->
+        </div>
+    </div>
+
+    <script>
+        const services = JSON.parse('{{ services|escapejs }}');
+    </script>
+    <script src="{% static 'js/services.js' %}"></script>
+{% endblock content %}
+
+
+

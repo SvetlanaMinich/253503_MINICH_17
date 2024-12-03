@@ -5,21 +5,75 @@
 {% block header %}Наши сотрудники{% endblock header %}
 
 {% block content %}
-<div class="flex-container">
-    {% for master in masters %}
-        <div class="flex-item">
-            {% if master.img_url %}
-            <img src="{{ master.img_url }}" width="150" height="150">
-            {% else %}
-            <img src="https://avatars.mds.yandex.net/i?id=d97ce0a89d90bf016b1cb96a6e86114d3e3c3920-12529201-images-thumbs&n=13" width="150" height="150">
-            {% endif %}
-            <h3>{{ master.name }}</h3>
-            <p>Возраст: {{ master.age }}</p>
-            <p>Телефон: {{ master.phone_number }}</p>
-            <p>Специализация: {{ master.specialization.name }}</p>
-            <p>Количество выполненных заказов: {{ master.order_count }}</p>
-        </div>
-    {% endfor %}
+<div id="preloader">
+	<div id="d1"></div>
+	<div id="d2"></div>
+	<div id="d3"></div>
+	<div id="d4"></div>
+	<div id="d5"></div>
 </div>
+
+<button id="addContactButton" onclick="openForm()">Добавить</button>
+
+<div id="addContactModal" class="modal hidden">
+    <div class="modal-content">
+        <button class="close-button" onclick="closeForm()">&times;</button>
+        <h2>Добавить сотрудника</h2>
+        <form id="addContactForm">
+            {% csrf_token %}            
+            <label for="name">ФИО:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="img_url">Фото (URL):</label>
+            <input type="text" id="img_url" name="img_url" required>
+            <label id="imgUrlError" class="error-message"></label>
+
+            <label for="date">Дата рождения:</label>
+            <input type="date" name="date_of_birth" required max="2006-01-01">
+
+            <label for="phone_number">Телефон:</label>
+            <input type="text" id="phone_number" name="phone_number" required pattern="^(\+375)[\s-]?(\(\d{2}\)|\d{2})[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}$">
+            <label id="phoneError" class="error-message"></label>
+
+            <button id="addContact" class="btn" type="submit">Добавить</button>
+        </form>
+    </div>
+</div>
+
+<div class="filter-container">
+    <input type="text" id="filterInput" placeholder="Поиск сотрудников...">
+    <button id="filterButton">Найти</button>
+</div>
+<table id="contactsTable" class="contacts-table">
+    <thead>
+        <tr>
+            <th>Выбрать</th>
+            <th>Фото</th>
+            <th data-column="name">ФИО</th>
+            <span class="sort-indicator"></span>
+            <th data-column="age">Возраст</th>
+            <span class="sort-indicator"></span>
+            <th data-column="phone_number">Телефон</th>
+            <span class="sort-indicator"></span>
+            <th data-column="specialization">Специализация</th>
+            <span class="sort-indicator"></span>
+            <th data-column="order_count">Выполненные заказы</th>
+            <span class="sort-indicator"></span>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Данные добавляются с помощью JavaScript -->
+    </tbody>
+</table>
+<div class="pagination-controls">
+    <button id="prevPage">Назад</button>
+    <span id="pageIndicator">Страница 1</span>
+    <button id="nextPage">Вперед</button>
+</div>
+<button id="rewardButton">Премировать</button>
+<div id="rewardMessage" class="reward-message"></div>
+<div id="contactDetails" class="contact-details"></div>
+<script src="{% static 'js/contactsTable.js' %}"></script>
+<script src="{% static 'js/newContact.js' %}"></script>
 {% endblock content %}
 

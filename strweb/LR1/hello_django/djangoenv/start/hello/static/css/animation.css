@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Расположение элементов по вертикали */
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Расстояние между блоками */
+    margin-top: 50px;
+}
+
+.image-container {
+    width: auto; /* Автоматическая ширина */
+    height: auto; /* Автоматическая высота */
+    max-width: 150px; /* Ограничение максимальной ширины */
+    max-height: 150px; /* Ограничение максимальной высоты */
+}
+
+.rotating-image {
+    width: 100%;
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    transition: transform 0.1s ease-out;
+}

@@ -1,19 +1,31 @@
 details summary {
-    color: black;
     width: auto;
-    font-size: 16px;
     letter-spacing: 2px;
     text-shadow: -2px 2px 2px rgb(221, 215, 215);
+    font-variant: small-caps;
 }
 details > p {
-   color: black;
-   font-size: 12px;
    text-indent: 50px;
    word-wrap: break-word;
 }
-div > p {
-    font-size: 10px;
+
+/* Стили для чекбокса и текста */
+.custom-label {
+    display: inline-flex;  /* Используем flexbox для выравнивания */
+    font-family: Arial, sans-serif; /* Шрифт */
+    color: #333;            /* Цвет текста */
+    margin: 20px;
 }
-.details.date {
-    color: darkgray;
+
+#styleSettings {
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 250px;
+    display: none;
+}
+
+#styleSettings div {
+    margin-bottom: 20px;
 }

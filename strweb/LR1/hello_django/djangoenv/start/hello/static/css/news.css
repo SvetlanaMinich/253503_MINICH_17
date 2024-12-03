@@ -54,6 +54,6 @@ p.article-summary {
     white-space: normal; 
     font-size: 1em;
     margin-bottom: 10px;
-    /* line-height: 1.6em;  */
-    max-height: calc(1.6em * 3);
+    line-height: 1.6em; 
+    /* max-height: calc(1.6em * 3); */
 }

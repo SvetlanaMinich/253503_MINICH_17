@@ -5,6 +5,30 @@
 {% block header %}Вопросы-ответы{% endblock header %}
 
 {% block content %}
+<!-- Флажок для включения настроек -->
+<label class="custom-label">
+    <input type="checkbox" id="toggleSettings" /> Изменить внешний вид
+</label>
+<!-- Элементы для изменения стиля -->
+<div id="styleSettings">
+    <div>
+        <label for="fontSize">Размер шрифта:</label>
+        <select id="fontSize">
+            <option value="14px">14px</option>
+            <option value="16px">16px</option>
+            <option value="18px">18px</option>
+            <option value="20px">20px</option>
+        </select>
+    </div>
+    <div>
+        <label for="textColor">Цвет текста:</label>
+        <input type="color" id="textColor" value="#000000" />
+    </div>
+    <div>
+        <label for="bgColor">Цвет фона:</label>
+        <input type="color" id="bgColor" value="#ffffff" />
+    </div>
+</div>
 {% for qa in qas %}
 <details>
     <summary><strong>{{ qa.question }}</strong></summary>
@@ -17,4 +41,5 @@
 </details>
 <hr>
 {% endfor %}
+<script src="{% static 'js/qa.js' %}"></script>
 {% endblock content %}

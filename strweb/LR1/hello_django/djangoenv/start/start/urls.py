@@ -31,8 +31,14 @@ urlpatterns = [
     path('qa/',views.qa),
     path('reviews/',views.reviews),
     path('vacancies/',views.vacancies),
+    path('services/',views.services),
     path('statistics/',views.statisticsv),
     path('requirements/',views.requirements),
+    path('task7-class/',views.task7_class),
+    path('task8-animation/',views.task8_animation),
+    path('task3/',views.task3),
+
+    path('api/contacts/', views.contacts_api, name='contacts_api'),
 
     path('register/master/<int:master_id>',views.mastersview, name="master"),
     path('login/master/<int:master_id>',views.mastersview, name="master"),
